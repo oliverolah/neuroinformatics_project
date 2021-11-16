@@ -18,6 +18,6 @@ from django.urls import path
 from homeroots.views import home_page
 
 urlpatterns = [
-    path('', home_page), # Root of application
+    path('', home_page,), # Root of application
     path('admin/', admin.site.urls),
 ]
