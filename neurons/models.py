@@ -13,7 +13,7 @@ class NeuronClass(models.Model):
 class Neuron(models.Model):
    neuronId = models.AutoField(primary_key=True)
    neuronName = models.CharField(max_length=10)
-   neuronClassId = models.ForeignKey("NeuronClass", to_field="neuronClassId", on_delete=models.CASCADE)
+   neuronClassId = models.ForeignKey("NeuronClass", to_field="neuronClassId", on_delete=models.CASCADE, db_column="neuronClassId")
    
    class Meta:
       verbose_name="Neuron"
@@ -34,10 +34,10 @@ class Edge(models.Model):
    # neuronReceiver == n_receptor (receive=receptor)
 class Connectome(models.Model):
    neuronConnId = models.AutoField(primary_key=True)
-   neuronSender = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.SET_NULL, null=True, related_name="n_transporter")
-   neuronReceiver = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.SET_NULL, null=True, related_name="n_receptor")
+   neuronSender = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.SET_NULL, null=True, related_name="n_transporter", db_column="neuronSender")
+   neuronReceiver = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.SET_NULL, null=True, related_name="n_receptor", db_column="neuronReceiver")
    neuronConnNum = models.IntegerField(default=1)
-   neuronEdgeId = models.ForeignKey("Edge", to_field="neuronEdgeId", on_delete=models.SET_NULL, null=True)
+   neuronEdgeId = models.ForeignKey("Edge", to_field="neuronEdgeId", on_delete=models.SET_NULL, null=True, db_column="neuronEdgeId")
    
    class Meta:
       verbose_name="Connectome"
