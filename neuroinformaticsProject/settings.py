@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # added apps
-    'homeroots', 
+    'homeroots',
+    'neurons', 
 ]
 
 MIDDLEWARE = [
