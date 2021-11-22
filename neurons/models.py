@@ -9,6 +9,9 @@ class NeuronClass(models.Model):
       verbose_name="Neuron Class"
       verbose_name_plural="Neuron Classes"
 
+   def __str__(self):
+      return self.className
+
 
 class Neuron(models.Model):
    neuronId = models.AutoField(primary_key=True)
@@ -19,6 +22,9 @@ class Neuron(models.Model):
       verbose_name="Neuron"
       verbose_name_plural="Neurons"
 
+   def __str__(self):
+      return self.neuronName
+
 
 class Edge(models.Model):
    neuronEdgeId = models.AutoField(primary_key=True)
@@ -27,6 +33,9 @@ class Edge(models.Model):
    class Meta:
       verbose_name="Edge"
       verbose_name_plural="Edges"
+
+   def __str__(self):
+      return self.neuronEdgeType
 
 
 # Conn == connectome
