@@ -44,8 +44,8 @@ class Edge(models.Model):
    # neuronReceiver == n_receptor (receive=receptor)
 class Connectome(models.Model):
    neuronConnId = models.AutoField(primary_key=True)
-   neuronSender = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.CASCADE, related_name="n_transporter", db_column="neuronSender")
-   neuronReceiver = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.CASCADE, related_name="n_receptor", db_column="neuronReceiver")
+   neuronSender = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.CASCADE, default=None, related_name="n_transporter", db_column="neuronSender")
+   neuronReceiver = models.ForeignKey("Neuron", to_field="neuronId", on_delete=models.CASCADE, default=None, related_name="n_receptor", db_column="neuronReceiver")
    neuronConnNum = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1)])
    neuronEdgeId = models.ForeignKey("Edge", to_field="neuronEdgeId", on_delete=models.SET_NULL, null=True, blank=True, db_column="neuronEdgeId")
    
