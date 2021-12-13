@@ -14,7 +14,7 @@ module.exports = {
      */
     // mode: "jit", // this is always on in version 3.0 - so there is not use for it atm
 
-    content: [ // this was named purge before 3.0 version
+    content: [ // this was named PURGE before 3.0 version
         /**
          * HTML. Paths to Django template files that will contain Tailwind CSS classes.
          */
@@ -56,9 +56,9 @@ module.exports = {
     theme: {
         extend: {},
     },
-    variants: {
-        extend: {},
-    }, // variants also not needed in version 3.0
+    // variants: {
+    //     extend: {},
+    // }, // variants also not needed in version 3.0
     plugins: [
         /**
          * '@tailwindcss/forms' is the forms plugin that provides a minimal styling
