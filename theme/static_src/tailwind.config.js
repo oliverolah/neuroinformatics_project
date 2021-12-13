@@ -12,9 +12,9 @@ module.exports = {
      * Set mode to "jit" if you want to generate your styles on-demand as you author your templates;
      * Set mode to "aot" if you want to generate the stylesheet in advance and purge later (aka legacy mode).
      */
-    mode: "jit",
+    // mode: "jit", // this is always on in version 3.0 - so there is not use for it atm
 
-    purge: [
+    content: [ // this was named PURGE before 3.0 version
         /**
          * HTML. Paths to Django template files that will contain Tailwind CSS classes.
          */
@@ -52,13 +52,13 @@ module.exports = {
          */
         // '../../**/*.py'
     ],
-    darkMode: false, // or 'media' or 'class'
+    // darkMode: false, // or 'media' or 'class' - not needed in 3.0
     theme: {
         extend: {},
     },
-    variants: {
-        extend: {},
-    },
+    // variants: {
+    //     extend: {},
+    // }, // variants also not needed in version 3.0
     plugins: [
         /**
          * '@tailwindcss/forms' is the forms plugin that provides a minimal styling
