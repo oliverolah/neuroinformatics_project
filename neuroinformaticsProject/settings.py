@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'neuroinformaticsProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'neuroinformatics_db',
+        'NAME': 'neuroinfo_db',
         'USER': 'postgres',
         'PASSWORD': 'admin856QsCgY',
         'HOST': 'localhost',
