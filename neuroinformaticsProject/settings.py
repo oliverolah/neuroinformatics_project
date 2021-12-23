@@ -136,8 +136,6 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = BASE_DIR / 'static'
 
-
-
 # Taliwind CONFIG
 TAILWIND_APP_NAME = 'theme'
 
