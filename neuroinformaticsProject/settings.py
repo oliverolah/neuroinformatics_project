@@ -134,7 +134,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'theme/static/css/dist'
+    BASE_DIR / 'theme/static/css/dist',
+        'static-files',
 ]
 
 STATIC_ROOT = BASE_DIR / 'static'
