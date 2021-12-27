@@ -16,18 +16,20 @@
    {% include "navbar.html" %}
    
    <!-- Main Body Content -->
-   <main>
+   <main class="block mx-auto w-11/12 xl:w-10/12">
 
       <!-- Hero -->
-      <div>
-         <div>
-            <h1>Explore & visualise <span>Extrasynaptic Neural Signalling</span> data.</h1>
-            <button>
-               <a href="#">Explore</a>
-            </button>
+      <div class="block py-20 lg:flex lg:justify-between">
+         <div class="w-2/3 mx-auto xl:mx-0 xl:w-2/4 xl:my-auto">
+            <h1 class="text-center text-3xl font-semibold leading-tight md:text-4xl lg:leading-normal lg:text-left xl:text-5xl xl:leading-snug 2xl:text-6xl 2xl:leading-snug">Explore & visualise<br><span class="text-cardiffMetSecondary font-bold">Extrasynaptic Neural <br> Signalling</span> data.</h1>
+            <div class="flex mt-10">
+               <button class="mx-auto bg-cardiffMetPrimary py-5 px-12 rounded-md lg:mx-0">
+                  <a class="text-white text-lg" href="#">Explore</a>
+               </button>
+            </div>
          </div>
-         <div>
-            <img src="" alt="Neural Network Hero Image">
+         <div class="hidden lg:block lg:flex-grow lg:w-2/4">
+            <img class="lg:h-full lg:rounded-md lg:shadow-lg" src='{% static "images/neurons-hero-wallpaper.jpg" %}' alt="Neural Network Hero Image">
          </div>
       </div>
 
