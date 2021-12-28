@@ -1,4 +1,5 @@
 {% load tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,65 +11,65 @@
 </head>
 <body>
    
-   <footer>
-      <div>
+   <footer class="bg-cardiffMetPrimary">
+      <div class="block w-11/12 mx-auto py-12 lg:py-20">
          <!-- Logo -->
-         <div>
-            <img src="" alt="Logo icon">
+         <div class="flex pb-12 lg:justify-center lg:pb-20">
+            <img class="h-10 lg:h-14" src='{% static "images/neuron-project-logo-white.png" %}' alt="Logo icon">
             <div>
-               <span>Extrasynaptome</span>
-               <span>Central Data Repository</span>
+               <p class="leading-4 text-white text-lg font-bold tracking-wide lg:text-2xl lg:leading-5">Extrasynaptome<br><span class="text-sm font-normal tracking-tight lg:text-lg">Central Data Repository</span></p>
             </div>
          </div>
 
          <!-- Other Page Links -->
-         <div>
-            <li>
-               <a href="#">Privacy Policy</a>
-            </li>
-            <li>
-               <a href="#">Terms & Conditions</a>
-            </li>
-            <li>
-               <a href="#">Versioning</a>
-            </li>
-            <li>
-               <a href="#">Key Papers</a>
-            </li>
-            <br>
-            <li>
-               <a href="#">Key Websites</a>
-            </li>
-            <li>
-               <a href="#">Contact Form</a>
-            </li>
+         <div class="flex gap-5 mb-1 lg:justify-center lg:gap-10 lg:mb-5">
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Privacy Policy</a>
+            </div>
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Terms & Conditions</a>
+            </div>
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Versioning</a>
+            </div>
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Key Papers</a>
+            </div>
+         </div>
+         <div class="flex gap-5 lg:justify-center lg:gap-10 lg:pb-8">
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Key Websites</a>
+            </div>
+            <div>
+               <a class="text-zinc-200 text-xs lg:text-base" href="#">Contact Form</a>
+            </div>
          </div>
 
          <!-- Social Media Links -->
-         <div>
-            <div>
-               <img src="" alt="Twitter Icon">
+         <div class="flex my-12 gap-5 lg:justify-center lg:gap-8 lg:mb-20">
+            <div class="bg-zinc-200 rounded-full">
+               <a href="#"><img class="h-10 lg:h-14 p-1 lg:m-1" src='{% static "images/twitter-logo.png" %}' alt="Twitter Icon"></a>
             </div>
-            <div>
-               <img src="" alt="Facebook Icon">
+            <div class="bg-zinc-200 rounded-full">
+               <a href="#"><img class="h-10 lg:h-14 p-2 lg:m-1" src='{% static "images/facebook-logo.png" %}' alt="Facebook Icon"></a>
             </div>
-            <div>
-               <img src="" alt="GitHub Icon">
+            <div class="bg-white rounded-full">
+               <a href="#"><img class="h-10 lg:h-14 p-1 lg:m-1" src='{% static "images/github-logo.png" %}' alt="GitHub Icon"></a>
             </div>
-            <div>
-               <img src="" alt="Instagram Icon">
+            <div class="bg-zinc-200 rounded-full">
+               <a href="#"><img class="h-10 lg:h-14 p-2 lg:m-1" src='{% static "images/instagram-logo.png" %}' alt="Instagram Icon"></a>
             </div>
          </div>
 
          <!-- Credits -->
-         <div>
-            <img src="" alt="Globe image">
-            <p>UK | 2022</p>
+         <div class="flex gap-1 justify-end">
+            <img class="h-3 my-auto lg:h-4" src='{% static "images/earth-logo-grey.png" %}' alt="Globe image">
+            <p class="text-zinc-200 text-xs lg:text-sm">UK | 2022</p>
          </div>
-         <div>
-            <p>The Bentley Laboratory</p>
-            <p>Cardiff School of Technologies</p>
-            <p>Cardiff Metropolitan University, UK</p>
+         <div class="block">
+            <p class="text-xs text-zinc-200 lg:text-sm">The Bentley Laboratory</p>
+            <p class="text-xs text-zinc-200 lg:text-sm">Cardiff School of Technologies</p>
+            <p class="text-xs text-zinc-200 lg:text-sm">Cardiff Metropolitan University, UK</p>
          </div>
       </div>
    </footer>
