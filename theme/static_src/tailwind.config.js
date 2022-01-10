@@ -85,6 +85,7 @@ module.exports = {
             pink: colors.pink,
             rose: colors.rose,
             cardiffMetPrimary: '#002D56',
+            cardiffMetPrimaryLighter: '#003566',
             cardiffMetSecondary: '#0D47A1',
         }),
     },
