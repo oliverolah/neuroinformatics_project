@@ -20,8 +20,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', returnHomePage), # Root of application
-    path('admin/', admin.site.urls),
+    path(r'', returnHomePage, name='home'), # Root of application
+    path(r'admin/', admin.site.urls, name='admin'),
 ] 
 
 if settings.DEBUG:
