@@ -15,7 +15,7 @@ function closeSidebar() {
       sidebar.style.display = 'none';
       background.style.display = 'none';
    }
-}
+};
 
 window.addEventListener("resize", closeSidebar);
 
