@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     
     # added apps
     'homeroots',
+    'neurons', 
     'theme', # This is for tailwindcss
-    
     
     # 3rd party apps
     'tailwind',
@@ -85,8 +85,12 @@ WSGI_APPLICATION = 'neuroinformaticsProject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'neuroinfo_db',
+        'USER': 'postgres',
+        'PASSWORD': 'admin856QsCgY',
+        'HOST': 'localhost',
+        'PORT': '5432'
     }
 }
 
