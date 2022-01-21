@@ -30,6 +30,7 @@ module.exports = {
         '../../templates/homeroots/home.html',
         '../../templates/footer.html',
         '../../templates/navbar.html',
+        '../../templates/submitdata/submit_data_page.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).

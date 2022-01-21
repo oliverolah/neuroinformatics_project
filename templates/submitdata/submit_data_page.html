@@ -16,40 +16,47 @@
    {% include "navbar.html" %}
 
    <main class="block mx-auto w-11/12 xl:w-10/12">
-      
-      <!-- Left/Top Part -->
+
+      <!-- DIV for both left/right containers(alignment) -->
       <div>
+         <!-- Left/Top Part -->
          <div>
-            <h1>Submit your data</h1>
-            <p>If you are interested in submitting your data, you can do it here!</p>
+            <div>
+               <h1>Submit your data</h1>
+               <p>If you are interested in submitting your data, you can do it here!</p>
+            </div>
+            <div>
+               <div class="flex">
+                  <div>
+                     <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <p>Help us and contribute to this repository by submitting your data.</p>
+               </div>
+               <div class="flex">
+                  <div>
+                     <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <p>We appreciate new data that can bring new insights to push the project forward.</p>
+               </div>
+               <div class="flex">
+                  <div>
+                     <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <p>Received data will be reviewed and even possibly included in our database repository.</p>
+               </div>
+            </div>
+            <div>
+               <h3>Thank you for your contribution!</h3>
+            </div>
          </div>
+
+         <!-- Right/Bottom Part -->
          <div>
-            <div class="flex">
-               <div>
-                  <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
-               </div>
-               <p>Help us and contribute to this repository by submitting your data.</p>
+            <div>
+               <h1 class="text-3xl font-bold">FORM COMING SOON - Iteration 6</h1>
             </div>
-            <div class="flex">
-               <div>
-                  <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
-               </div>
-               <p>We appreciate new data that can bring new insights to push the project forward.</p>
-            </div>
-            <div class="flex">
-               <div>
-                  <img class="h-10" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
-               </div>
-               <p>Received data will be reviewed and even possibly included in our database repository.</p>
-            </div>
-         </div>
-         <div>
-            <h3>Thank you for your contribution!</h3>
          </div>
       </div>
-
-      <!-- Right/Bottom Part -->
-
    </main>
 
    <!-- Footer -->
