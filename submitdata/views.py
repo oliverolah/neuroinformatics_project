@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def returnSubmitDataPage(request):
+   return render(request, "submitdata/submit_data_page.html")
