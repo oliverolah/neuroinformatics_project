@@ -72,6 +72,10 @@ coverage.xml
 # celery 
 celerybeat-schedule.* 
 
+commands.md
+outdated_code.md
+useful-links.md
+
 # SageMath parsed files 
 *.sage.py 
 
