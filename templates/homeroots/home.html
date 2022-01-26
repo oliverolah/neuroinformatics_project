@@ -1,11 +1,13 @@
 {% load tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Home Page</title>
+   <title>Extrasynaptome Central Data Repository</title>
+   <link rel ="icon" href="{% static 'images/neuron-project-logo-blue.png' %}" type ="image/x-icon">
    {% tailwind_css %}
 </head>
 <body>
@@ -14,39 +16,55 @@
    {% include "navbar.html" %}
    
    <!-- Main Body Content -->
-   <main>
+   <main class="block mx-auto w-11/12 xl:w-10/12">
 
       <!-- Hero -->
-      <div>
-         <h1>Explore and accelerate the knowledge of the neuron networks data with interactive visualisations!</h1>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam sapiente iste quidem tempora repudiandae nobis in soluta dolorum voluptatibus sunt.</p>
-         <button>
-            <a href="#">Explore</a>
-         </button>
+      <div class="block pt-28 pb-40 lg:flex lg:justify-between">
+         <div class="w-3/4 mx-auto xl:mx-0 xl:w-2/4 xl:my-auto">
+            <h1 class="text-center font-semibold leading-tight text-4xl md:text-5xl md:leading-normal lg:text-left xl:leading-snug 2xl:text-6xl 2xl:leading-snug">Explore & visualise<br><span class="text-cardiffMetSecondary font-bold">Extrasynaptic Neural <br> Signalling</span> data.</h1>
+            <div class="flex mt-10">
+               <button class="mx-auto bg-cardiffMetPrimary py-3 px-10 rounded-md lg:mx-0 hover:bg-cardiffMetPrimaryLighter">
+                  <a class="text-white text-lg" href="#">Explore</a>
+               </button>
+            </div>
+         </div>
+         <div class="hidden lg:block lg:flex-grow lg:w-2/4">
+            <img class="lg:h-full lg:rounded-md lg:shadow-lg" src='{% static "images/neurons-hero-wallpaper.jpg" %}' alt="Neural Network Hero Image">
+         </div>
       </div>
 
       <!-- Sections: About & Data Submission -->
-      <div>
+      <div class="grid gap-12 lg:flex lg:justify-center xl:gap-20 2xl:gap-32">
          <!-- About -->
-         <div>
-            <h1>About the project</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum et quis quaerat. In illum soluta unde accusantium quasi laboriosam autem!</p>
-            <button>
-               <a href="#">Read More</a>
-            </button>
+         <div class="bg-zinc-100 py-16 rounded-md shadow-xl px-5 sm:px-10 md:px-20 lg:px-14 lg:w-2/4 xl:py-24">
+            <h1 class="text-3xl font-semibold pb-7 xl:text-5xl">The Project</h1>
+            <p class="text-sm leading-4 pb-7 md:text-base xl:text-lg">This web application aims to aid  bioengineering research aiming to understand human being's brain functioning by investigating network neuroscience and connectomics of its nervous systems.</p>
+               <a href="#" class="flex gap-1">
+                  <span class="font-medium text-cardiffMetSecondary text-sm md:text-base xl:text-lg hover:font-bold">Read more</span> 
+                  <img class="h-5 my-auto" src='{% static "images/right-arrow.png" %}' alt="Right Arrow">
+               </a>
          </div>
-         <!-- About -->
-         <div>
-            <h1>Submit your data!</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum et quis quaerat. In illum soluta unde accusantium quasi laboriosam autem!</p>
-            <button>
-               <a href="#">Submit</a>
-            </button>
+      
+         <!-- Data Submission -->
+         <div class="bg-zinc-100 py-16 rounded-md shadow-xl px-5 sm:px-10 md:px-20 lg:px-14 lg:w-2/4 xl:py-24">
+            <h1 class="text-3xl font-semibold pb-7 xl:text-5xl">Submit data</h1>
+            <p class="text-sm leading-4 pb-7 md:text-base xl:text-lg">To improve the research we believe that our users can contribute as well. If you have data that can contribute to the CardiffMet data repository, please, do not hesitate and submit your own data for review and even their potential implementation.</p>
+               <a href="#" class="flex gap-1">
+                  <span class="font-medium text-cardiffMetSecondary text-sm md:text-base xl:text-lg hover:font-bold">Submit data</span>
+                  <img class="h-5 my-auto" src='{% static "images/right-arrow.png" %}' alt="Right Arrow">
+               </a>
          </div>
+      </div>
+
+      <!-- Sponsors section -->
+      <div class="block my-12 lg:my-40">
+         <h1 class="text-3xl font-semibold pb-7 xl:text-5xl lg:text-center">Sponsors</h1>
+         <img class="lg:mx-auto" src='{% static "images/CardiffMet-logo.png" %}' alt="CardiffMet Logo Sponsor">
       </div>
    </main>
 
    <!-- Footer -->
    {% include "footer.html" %}
+
 </body>
 </html>

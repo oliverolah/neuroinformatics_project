@@ -1,45 +1,84 @@
 {% load tailwind_tags %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>NavBar</title>
    {% tailwind_css %}
 </head>
 <body>
 
-   <nav>
-      <div>
+   <nav class="flex max-w-full h-14 md:h-16 lg:h-20">
+      <div class="w-11/12 flex justify-between mx-auto xl:w-10/12">
 
          <!-- Logo -->
-         <div>
-            <img src="" alt="Logo icon">
+         <div class="flex">
+            <a href="#" class="my-auto">
+               <img src='{% static "images/neuron-project-logo-blue.png" %}' alt="Logo icon" class="h-10 lg:h-14">
+            </a>
+            <a href="#" class="my-auto">
+               <p class="leading-4 text-cardiffMetPrimary text-lg font-bold tracking-wide lg:text-2xl lg:leading-5">Extrasynaptome<br><span class="text-sm font-normal tracking-tight lg:text-lg">Central Data Repository</span></p>
+            </a>
          </div>
 
-         <!-- Links of NavBar -->
-         <div>
-            <ul>
-               <li>
-                  <a href="#">DataVis</a>
-               </li>
-               <li>
-                  <a href="#">Submit Data</a>
-               </li>
-               <li>
-                  <a href="#">About</a>
-               </li>
-            </ul>
-         </div>
-
-         <!-- Admin Login Btn -->
-         <button>
-            <a href="#">Admin</a>
+         <!-- Hamburger Menu -->
+         <button id="openHamburgerMenu" class="my-auto cursor-pointer md:hidden">
+            <img src="{% static 'images/hamburger-menu.png' %}" alt="Hamburger Menu Logo" class="w-7">
          </button>
-         
+
+         <!-- Navigation Menu -->
+         <div class="hidden md:block my-auto">
+            <div class="flex gap-3 lg:gap-8 xl:gap-12">
+               <div class="text-cardiffMetPrimary lg:text-lg">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">Visualisations</a>
+               </div>
+               <div class="text-cardiffMetPrimary lg:text-lg">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">About</a>
+               </div>
+               <div class="text-cardiffMetPrimary lg:text-lg">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">Submit Data</a>
+               </div>
+               <div class="text-cardiffMetPrimary lg:text-lg">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">Contact Us</a>
+               </div>
+               <div class="text-cardiffMetPrimary font-bold lg:text-lg">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 cursor-pointer hover:underline-offset-1" href="#">Admin</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Right side to the sidebar menu -->
+         <div id="background" class="hidden bg-black opacity-50 top-0 right-0 bottom-0 left-0 fixed md:hidden"></div>
+         <!-- Sidebar Menu -->
+         <div id="sidebar" class="hidden fixed w-4/5 left-0 inset-y-0 bg-white text-right md:hidden">
+            <div class="mt-4 mr-5">
+               <div class="ml-5">
+                  <img id="closeHamburgerMenu" src="{% static 'images/close-hamburger-menu.png' %}" alt="Close Hamburger Menu" class="w-7 cursor-pointer">
+               </div>
+               <div class="text-cardiffMetPrimary text-3xl pb-4 pt-12">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">Visualisations</a>
+               </div>
+               <div class="text-cardiffMetPrimary text-3xl py-4">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">About</a>
+               </div>
+               <div class="text-cardiffMetPrimary text-3xl py-4">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">Submit Data</a>
+               </div>
+               <div class="text-cardiffMetPrimary text-3xl py-4">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">Contact Us</a>
+               </div>
+               <div class="text-cardiffMetPrimary font-bold text-3xl py-4">
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:underline-offset-1" href="#">Admin</a>
+               </div>
+            </div>
+         </div>
       </div>
    </nav>
+
+   <script src="{% static 'js/sidebar.js' %}"></script>
 
 </body>
 </html>

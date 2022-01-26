@@ -1,3 +1,7 @@
+useful-links.md
+commands.md
+outdated_code.md
+
 # Django #
 *.log
 *.pot
@@ -71,6 +75,10 @@ coverage.xml
 
 # celery 
 celerybeat-schedule.* 
+
+commands.md
+outdated_code.md
+useful-links.md
 
 # SageMath parsed files 
 *.sage.py 
