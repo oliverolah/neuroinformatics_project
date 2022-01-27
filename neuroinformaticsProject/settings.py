@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'homeroots',
     'neurons', 
     'theme', # This is for tailwindcss
+    'submitdata',
     
     # 3rd party apps
     'tailwind',
