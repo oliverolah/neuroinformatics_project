@@ -89,11 +89,20 @@ DATABASES = {
         'HOST': config('DB_HOST_2'),
         'PORT': config('DB_PORT_2')
     },
+    'submitdata_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME_3'),
+        'USER': config('DB_USER_3'),
+        'PASSWORD': config('DB_PASSWORD_3'),
+        'HOST': config('DB_HOST_3'),
+        'PORT': config('DB_PORT_3')
+    },
 }
 
 DATABASE_ROUTERS = [
     'routers.db_routers.DefaultAdminAuthRouter', 
-    'routers.db_routers.NeuronsRouter'
+    'routers.db_routers.NeuronsRouter',
+    'routers.db_routers.SubmitDataRouter'
 ]
 
 
