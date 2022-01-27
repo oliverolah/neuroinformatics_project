@@ -16,10 +16,10 @@
 
          <!-- Logo -->
          <div class="flex">
-            <a href="#" class="my-auto">
+            <a href="{% url 'home' %}" class="my-auto">
                <img src='{% static "images/neuron-project-logo-blue.png" %}' alt="Logo icon" class="h-10 lg:h-14">
             </a>
-            <a href="#" class="my-auto">
+            <a href="{% url 'home' %}" class="my-auto">
                <p class="leading-4 text-cardiffMetPrimary text-lg font-bold tracking-wide lg:text-2xl lg:leading-5">Extrasynaptome<br><span class="text-sm font-normal tracking-tight lg:text-lg">Central Data Repository</span></p>
             </a>
          </div>
@@ -39,13 +39,13 @@
                   <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">About</a>
                </div>
                <div class="text-cardiffMetPrimary lg:text-lg">
-                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">Submit Data</a>
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="{% url 'submitdatapage' %}">Submit Data</a>
                </div>
                <div class="text-cardiffMetPrimary lg:text-lg">
                   <a class="hover:underline hover:decoration-cardiffMetPrimary cursor-pointer hover:underline-offset-2" href="#">Contact Us</a>
                </div>
                <div class="text-cardiffMetPrimary font-bold lg:text-lg">
-                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 cursor-pointer hover:underline-offset-1" href="#">Admin</a>
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 cursor-pointer hover:underline-offset-1" href="{% url 'admin:index' %}">Admin</a>
                </div>
             </div>
          </div>
@@ -65,13 +65,13 @@
                   <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">About</a>
                </div>
                <div class="text-cardiffMetPrimary text-3xl py-4">
-                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">Submit Data</a>
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="{% url 'submitdatapage' %}">Submit Data</a>
                </div>
                <div class="text-cardiffMetPrimary text-3xl py-4">
                   <a class="hover:underline hover:decoration-cardiffMetPrimary hover:decoration-2 hover:underline-offset-2" href="#">Contact Us</a>
                </div>
                <div class="text-cardiffMetPrimary font-bold text-3xl py-4">
-                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:underline-offset-1" href="#">Admin</a>
+                  <a class="hover:underline hover:decoration-cardiffMetPrimary hover:underline-offset-1" href="{% url 'admin:index' %}">Admin</a>
                </div>
             </div>
          </div>

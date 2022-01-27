@@ -1,0 +1,73 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Submit Data Page</title>
+   <link rel ="icon" href="{% static 'images/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+   {% tailwind_css %}
+</head>
+<body>
+   
+   <!-- Navigation bar -->
+   {% include "navbar.html" %}
+
+   <main class="block mx-auto w-11/12 xl:w-10/12">
+
+      <!-- DIV for both left/right containers(alignment) -->
+      <div class="lg:flex">
+         <!-- Left/Top Part -->
+         <div class="w-full mb-14">
+            <div class="my-14">
+               <h1 class="text-4xl font-medium pb-7 lg:text-5xl xl:text-6xl">Submit your data</h1>
+               <p class="w-2/3 text-base leading-6">If you are interested in submitting your data, you can do it here!</p>
+            </div>
+            <div>
+               <div class="flex w-full gap-4 pb-10 lg:pb-14">
+                  <div class="bg-zinc-200 flex p-3 rounded-full">
+                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <div class="flex w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
+                     <p class="font-semibold inline-block align-top lg:text-base">Help us and contribute to this repository by submitting your data.
+                     </p>
+                  </div>
+               </div>
+               <div class="flex w-full gap-4 pb-10 lg:pb-14">
+                  <div class="bg-zinc-200 flex p-3 rounded-full">
+                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <div class="w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
+                     <p class="font-semibold inline-block align-top lg:text-base">We appreciate new data that can bring new insights to push the project forward.</p>
+                  </div>
+               </div>
+               <div class="flex w-full gap-4 pb-10 lg:pb-14">
+                  <div class="bg-zinc-200 flex p-3 rounded-full">
+                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                  </div>
+                  <div class="w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
+                     <p class="font-semibold inline-block align-top lg:text-base">Received data will be reviewed and even possibly included in our database repository.</p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <h3 class="text-lg font-bold inline-block align-top text-cardiffMetSecondary">Thank you for your contribution!</h3>
+            </div>
+         </div>
+
+         <!-- Right/Bottom Part -->
+         <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:my-auto lg:w-full">
+            <div class="mx-auto my-auto px-5 py-10">
+               <h1 class="text-3xl font-bold">FORM COMING SOON - Iteration 6</h1>
+            </div>
+         </div>
+      </div>
+   </main>
+
+   <!-- Footer -->
+   {% include "footer.html" %}
+
+</body>
+</html>
