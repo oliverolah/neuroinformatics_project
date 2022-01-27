@@ -92,8 +92,21 @@ DATABASES = {
         'PASSWORD': config('DB_PASSWORD_1'),
         'HOST': config('DB_HOST_1'),
         'PORT': config('DB_PORT_1')
-    }
+    },
+    'neurons_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME_2'),
+        'USER': config('DB_USER_2'),
+        'PASSWORD': config('DB_PASSWORD_2'),
+        'HOST': config('DB_HOST_2'),
+        'PORT': config('DB_PORT_2')
+    },
 }
+
+DATABASE_ROUTERS = [
+    'routers.db_routers.DefaultAdminAuthRouter', 
+    'routers.db_routers.NeuronsRouter'
+]
 
 
 # Password validation
