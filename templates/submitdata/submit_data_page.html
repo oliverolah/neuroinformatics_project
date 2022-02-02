@@ -7,7 +7,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Submit Data Page</title>
-   <link rel ="icon" href="{% static 'images/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+   <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
    {% tailwind_css %}
 </head>
 <body>
@@ -28,7 +28,7 @@
             <div>
                <div class="flex w-full gap-4 pb-10 lg:pb-14">
                   <div class="bg-zinc-200 flex p-3 rounded-full">
-                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                     <img class="w-7" src='{% static "icons/tick-blue.png" %}' alt="Tick Logo">
                   </div>
                   <div class="flex w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
                      <p class="font-semibold inline-block align-top lg:text-base">Help us and contribute to this repository by submitting your data.
@@ -37,7 +37,7 @@
                </div>
                <div class="flex w-full gap-4 pb-10 lg:pb-14">
                   <div class="bg-zinc-200 flex p-3 rounded-full">
-                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                     <img class="w-7" src='{% static "icons/tick-blue.png" %}' alt="Tick Logo">
                   </div>
                   <div class="w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
                      <p class="font-semibold inline-block align-top lg:text-base">We appreciate new data that can bring new insights to push the project forward.</p>
@@ -45,7 +45,7 @@
                </div>
                <div class="flex w-full gap-4 pb-10 lg:pb-14">
                   <div class="bg-zinc-200 flex p-3 rounded-full">
-                     <img class="w-7" src='{% static "images/tick-blue.png" %}' alt="Tick Logo">
+                     <img class="w-7" src='{% static "icons/tick-blue.png" %}' alt="Tick Logo">
                   </div>
                   <div class="w-full md:w-2/3 lg:w-9/12 xl:w-4/6">
                      <p class="font-semibold inline-block align-top lg:text-base">Received data will be reviewed and even possibly included in our database repository.</p>
@@ -60,7 +60,6 @@
          <!-- Right/Bottom Part -->
          <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:my-auto lg:w-full">
             <div class="mx-auto my-auto px-5 py-10">
-               <h1 class="text-3xl font-bold">FORM COMING SOON - Iteration 6</h1>
                {% include "submitdata/submit_data_form.html" %}
             </div>
          </div>

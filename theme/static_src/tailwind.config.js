@@ -89,6 +89,8 @@ module.exports = {
             cardiffMetPrimary: '#002D56',
             cardiffMetPrimaryLighter: '#003566',
             cardiffMetSecondary: '#0D47A1',
+            successGreen: '#10A52E',
+            successGreenBrighter: '#04C42B'
         }),
     },
     // variants: {

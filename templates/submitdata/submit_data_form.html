@@ -7,11 +7,98 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Submit Data Form</title>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
    {% tailwind_css %}
 </head>
 <body>
-   
-   <h1>Hello!</h1>
+
+   <form id="p-form" autocomplete="off" action=".">
+      {% csrf_token %}
+
+      {% for field in form %}
+      <div>
+         <label>{{field.label}}</label>
+         <div>
+            {{field}}
+         </div>
+      </div>
+      {% endfor %}
+
+      <button type="submit" class="bg-successGreen flex mt-5 rounded-md hover:bg-successGreenBrighter">
+         <div class="my-3 mx-7 flex gap-2">
+            <span class="text-white font-base">Submit</span>
+            <img src='{% static "icons/right-arrow-white.png" %}' alt="Right Arrow Logo" class="w-6 my-auto">
+         </div>
+      </button>
+   </form>
+
+   <div id="alert-box"></div>
+
+   <!-- <script src="{% static 'js/submit_data_form.js' %}"></script> -->
+
+   <script type="text/javascript">
+      let alertBox = document.getElementById('alert-box');
+      let form = document.getElementById('p-form');
+      let title = document.getElementById('id_title');
+      let fName = document.getElementById('id_firstName');
+      let lName = document.getElementById('id_lastName');
+      let emailAddress = document.getElementById('id_email');
+      let desc = document.getElementById('id_description');
+      let subFile = document.getElementById('id_submitFile');
+      const csrf = document.getElementsByName('csrfmiddlewaretoken');
+      const url = '';
+
+      const handleAlerts = (type, text) => {
+         alertBox.innerHTML = `
+         <div class="mt-5">
+            <span class="${type}">${text}</span>
+         </div>
+         `
+      }
+
+      form.addEventListener('submit', e => {
+         e.preventDefault();   // disabling page reload
+         
+         const formData = new FormData();
+         formData.append('csrfmiddlewaretoken', csrf[0].value);
+         formData.append('title', title.value);
+         formData.append('firstName', fName.value);
+         formData.append('lastName', lName.value); 
+         formData.append('email', emailAddress.value);
+         formData.append('description', desc.value);
+         formData.append('submitFile', subFile.files[0]);
+
+         $.ajax({
+            type: 'POST',
+            url: url,
+            enctype: 'multipart/form-data',
+            data: formData,
+            success: function (response) {
+               console.log(response);
+               form.reset();
+               const type = 'text-successGreen text-lg font-medium';
+               const text = 'Submitted successfully!';
+               handleAlerts(type, text);
+               setTimeout(() => {
+                  alertBox.innerHTML = "";
+               }, 5000)
+            },
+            error: function (error) {
+               console.log(error);
+               form.reset();
+               const type = 'text-red-600 text-lg font-medium';
+               const text = 'Submission failed! If you are unable to submit your data, please contact us directly!';
+               handleAlerts(type, text);
+               setTimeout(() => {
+                  alertBox.innerHTML = "";
+               }, 5000)
+            },
+            cache: false,
+            contentType: false,
+            processData: false,
+         });
+      });
+   </script>
 
 </body>
 </html>
