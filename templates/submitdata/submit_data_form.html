@@ -7,24 +7,99 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Submit Data Form</title>
-   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+   <!-- <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script> -->
    {% tailwind_css %}
 </head>
 <body>
 
-   <form id="p-form" autocomplete="off" action=".">
+   <!-- {% if form.non_field_errors %}
+      {% for field in form %}
+         {% for error in field.errors %}
+         <div class="">
+            <strong>{{ error|escape }}</strong>
+         </div>
+         {% endfor %}
+      {% endfor %}
+   {% endif %} -->
+   
+   <form id="p-form" autocomplete="off">
       {% csrf_token %}
-
+      <!-- {{form.non_field_errors}}
       {% for field in form %}
       <div class="mb-5 w-full">
-         <label class="font-medium">{{field.label}}</label>
+         <label class="font-medium">
+            {{field.label}}<span class="text-red-600"> *</span>
+         </label>
          <div>
             {{field}}
          </div>
+         {% if field.errors %}
+            <div>
+               {{field.errors}}
+            </div>
+         {% endif %}
       </div>
-      {% endfor %}
+      {% endfor %} -->
 
-      <button type="submit" class="bg-successGreen flex mt-5 rounded-md hover:bg-successGreenBrighter">
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.title.id_for_label}}">Title
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.title}}
+         </div>
+         <div id="title-error-message"></div>
+      </div>
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.firstName.id_for_label}}">First name
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.firstName}}
+         </div>
+         <div id="fname-error-message"></div>
+      </div>
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.lastName.id_for_label}}">Last name
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.lastName}}
+         </div>
+         <div id="lname-error-message"></div>
+      </div>
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.email.id_for_label}}">Email address
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.email}}
+         </div>
+         <div id="email-error-message"></div>
+      </div>
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.description.id_for_label}}">Description
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.description}}
+         </div>
+         <div id="desc-error-message"></div>
+      </div>
+      <div class="mb-5 w-full">
+         <label class="font-medium" for="{{form.submitFile.id_for_label}}">Submit file
+            <span class="text-red-600"> *</span>
+         </label>
+         <div>
+            {{form.submitFile}}
+         </div>
+         <div id="subFile-error-size-message"></div>
+         <div id="subFile-error-ext-message"></div>
+         <div id="subFile-error-mime-message"></div>
+      </div>
+
+      <button type="submit" class="bg-successGreen flex mt-5 rounded-md hover:bg-successGreenBrighter" id="submit-btn">
          <div class="my-3 mx-7 flex gap-2">
             <span class="text-white font-base">Submit</span>
             <img src='{% static "icons/right-arrow-white.png" %}' alt="Right Arrow Logo" class="w-6 my-auto">
@@ -34,69 +109,8 @@
 
    <div id="alert-box"></div>
 
-   <script type="text/javascript">
-      let alertBox = document.getElementById('alert-box');
-      let form = document.getElementById('p-form');
-      let title = document.getElementById('id_title');
-      let fName = document.getElementById('id_firstName');
-      let lName = document.getElementById('id_lastName');
-      let emailAddress = document.getElementById('id_email');
-      let desc = document.getElementById('id_description');
-      let subFile = document.getElementById('id_submitFile');
-      const csrf = document.getElementsByName('csrfmiddlewaretoken');
-      const url = '';
-
-      const handleAlerts = (type, text) => {
-         alertBox.innerHTML = `
-         <div class="mt-5">
-            <span class="${type}">${text}</span>
-         </div>
-         `
-      }
-
-      form.addEventListener('submit', e => {
-         e.preventDefault();   // disabling page reload
-         
-         const formData = new FormData();
-         formData.append('csrfmiddlewaretoken', csrf[0].value);
-         formData.append('title', title.value);
-         formData.append('firstName', fName.value);
-         formData.append('lastName', lName.value); 
-         formData.append('email', emailAddress.value);
-         formData.append('description', desc.value);
-         formData.append('submitFile', subFile.files[0]);
-
-         $.ajax({
-            type: 'POST',
-            url: url,
-            enctype: 'multipart/form-data',
-            data: formData,
-            success: function (response) {
-               console.log(response);
-               form.reset();
-               const type = 'text-successGreen text-lg font-medium';
-               const text = 'Submitted successfully!';
-               handleAlerts(type, text);
-               setTimeout(() => {
-                  alertBox.innerHTML = "";
-               }, 5000)
-            },
-            error: function (error) {
-               console.log(error);
-               form.reset();
-               const type = 'text-red-600 text-lg font-medium';
-               const text = 'Submission failed! If you are unable to submit your data, please contact us directly!';
-               handleAlerts(type, text);
-               setTimeout(() => {
-                  alertBox.innerHTML = "";
-               }, 5000)
-            },
-            cache: false,
-            contentType: false,
-            processData: false,
-         });
-      });
-   </script>
-
+   
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+   <script src="{% static 'js/submit_data_page.js' %}"></script>
 </body>
 </html>

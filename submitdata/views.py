@@ -10,12 +10,22 @@ def returnSubmitDataPage(request):
    
    if request.is_ajax():
       if form.is_valid():  # if valid also cleaned
+         # form.save()
+         data["status"] = {
+            "result": "success",
+            "message": "Form valid and submitted",
+            "code": "valid"
+         }
          form.save()
-         data["status"] = "Submitted"
          return JsonResponse(data)
       else:
-         data["status"] = "Not submitted!"
+         data["status"] = {
+            "result": "failed",
+            "message": "Form invalid",
+            "code": "invalid"
+         }
          return JsonResponse(data)
+      form = SubmitDataForm()
    context = {
       "form": form,
    }
