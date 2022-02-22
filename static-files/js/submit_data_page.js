@@ -76,7 +76,8 @@ $(document).ready(function () {
                checkDesc();
                checkFileSize();
                checkFileExtension();
-               checkFileMime();
+               // checkFileMime();
+               // checkEmptyStringFields();
             } else {
                successSubmit();
                $('#title-error-message').hide();
@@ -86,7 +87,7 @@ $(document).ready(function () {
                $('#desc-error-message').hide();
                $('#subFile-error-size-message').hide();
                $('#subFile-error-ext-message').hide();
-               $('#subFile-error-mime-message').hide();
+               // $('#subFile-error-mime-message').hide();
             }
          },
          error: function (error) {
@@ -159,13 +160,13 @@ $(document).ready(function () {
       `
    }
 
-   const errorsFileMime = (type, text) => {
-      subFileMimeErrMsg.innerHTML = `
-      <div class="my-5">
-         <span class="${type}">${text}</span>
-      </div>
-      `
-   }
+   // const errorsFileMime = (type, text) => {
+   //    subFileMimeErrMsg.innerHTML = `
+   //    <div class="my-5">
+   //       <span class="${type}">${text}</span>
+   //    </div>
+   //    `
+   // }
 
    $('#title-error-message').hide();
    var errTitle = false;
@@ -188,8 +189,11 @@ $(document).ready(function () {
    $('#subFile-error-ext-message').hide();
    var errFileSubExt = false;
 
+   // $('#subFile-error-mime-message').hide();
+   // var errFileSubMime = false;
+
    function checkTitle() {
-      let letterPattern = /^[a-zA-Z\s]*$/;
+      let letterPattern = /^[a-zA-Z]*$/; // /^[a-zA-Z\s]*$/; - with spaces ===> (\s)
       let t = $(title).val();
       let titleLength = $(title).val().length;
       const numOfChars = 5;
@@ -254,27 +258,27 @@ $(document).ready(function () {
       }
    };
 
-   function checkEmail() {
-      let emailLettersPattern = /^([a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z])+$/; // /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
-      let eA = $(emailAddress).val();
-      let emailLength = $(emailAddress).val().length;
-      const numOfChars = 0;
-      if (!emailLettersPattern.test(eA)) {
-         const type = 'text-red-600 text-sm font-normal';
-         const text = 'Invalid email address format';
-         errorEmailTemp(type, text);
-         $('#email-error-message').show();
-         errEmail = true;
-      } else if (emailLength === numOfChars) {
-         const type = 'text-red-600 text-sm font-normal';
-         const text = 'You forgot to type in your email';
-         errorEmailTemp(type, text);
-         $('#email-error-message').show();
-         errEmail = true;
-      } else {
-         $('#email-error-message').hide();
-      }
-   };
+   // function checkEmail() {
+   //    let emailLettersPattern = /^([a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z])+$/; // /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/; 
+   //    let eA = $(emailAddress).val();
+   //    let emailLength = $(emailAddress).val().length;
+   //    const numOfChars = 0;
+   //    if (!emailLettersPattern.test(eA)) {
+   //       const type = 'text-red-600 text-sm font-normal';
+   //       const text = 'Invalid email address format';
+   //       errorEmailTemp(type, text);
+   //       $('#email-error-message').show();
+   //       errEmail = true;
+   //    } else if (emailLength === numOfChars) {
+   //       const type = 'text-red-600 text-sm font-normal';
+   //       const text = 'You forgot to type in your email';
+   //       errorEmailTemp(type, text);
+   //       $('#email-error-message').show();
+   //       errEmail = true;
+   //    } else {
+   //       $('#email-error-message').hide();
+   //    }
+   // };
 
    function checkDesc() {
       let descLength = $(desc).val().length;
@@ -319,78 +323,74 @@ $(document).ready(function () {
       }
    }
 
-   function checkFileMime() {
-      let output = $(subFileMimeErrMsg);
-      if (window.FileReader && window.Blob) {
-         $(subFile).click(function () {
-            let files = $(subFile).get(0).files;
-            if (files.length > 0) {
-               let file = files[0];
-               console.log('Loaded file: ' + file.name);
-               console.log('Blob mime: ' + file.type);
+   // function checkFileMime() {
+   //    let output = $(subFileMimeErrMsg);
+   //    if (window.FileReader && window.Blob) {
+   //       $(submitBtn).click(function () {
+   //          let fls = $(subFile).get(0).files;
+   //          if (fls.length > 0) {
+   //             let file = fls[0];
+   //             console.log('Loaded file: ' + file.name);
+   //             console.log('Blob mime: ' + file.type);
+   //             let fileReader = new FileReader();
+   //             fileReader.onloadend = function (e) {
+   //                let arr = (new Uint8Array(e.target.result)).subarray(0, 4);
+   //                let header = '';
+   //                for (let i = 0; i < arr.length; i++) {
+   //                   header += arr[i].toString(16);
+   //                }
+   //                // console.log('File header: ' + head);
 
-               let fileReader = new FileReader();
-               fileReader.onloadend = function (e) {
-                  let arr = (new Uint8Array(e.target.output)).subarray(0, 4);
-                  let head = '';
-                  for (let i = 0; i < arr.length; i++) {
-                     head += arr[i].toString(16);
-                  }
-                  console.log('File header: ' + head);
-
-                  // file types
-                  // ['.pdf', '.docx', '.jpg', '.jpeg', '.png', '.xlsx', '.xls', '.txt']
-                  let type = 'unknown';
-                  switch (head) {
-                     case '255044462D312E':
-                        type = 'application/pdf'; // pdf
-                        break;
-                     case '504B030414000600':
-                        type = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'; // docx
-                        break;
-                     case '504B030414000600':
-                        type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; // xlsx
-                        break;
-                     case 'FFD8FFE2':
-                     case 'FFD8FFE0':
-                     case 'FFD8FFE1':
-                        type = 'image/jpeg'; // jpeg
-                        break;
-                     case '89504E47':
-                        type = 'image/png'; // png
-                        break;
-                     case 'FFD8FF':
-                        type = 'jpg'; // jpg
-                        break;
-                     case 'D0CF11E0':
-                        type = 'application/vnd.ms-excel'; // xls
-                        break;
-                     case '504B0304':
-                        type = 'application/zip'; // zip folder
-                        break;
-                     case '52617221':
-                        type = 'application/vnd.rar'; // rar folder
-                        break;
-                     case 'EFBBBF':
-                        type = 'text/plain'; // txt
-                        break;
-                  }
-                  if (file.type !== type) {
-                     const type = 'text-red-600 text-sm font-normal';
-                     const text = 'Invalid file type. Please try again';
-                     errorsFileMime(type, text);
-                     $('#subFile-error-mime-message').show();
-                     errFileSubMime = true;
-                  } else {
-                     $('#subFile-error-mime-message').hide();
-                  }
-               };
-               fileReader.readAsArrayBuffer(file);
-            }
-         });
-      } else {
-         output.html('<span style="color: red; ">Your browser is not supported. Sorry.</span>');
-         console.error('FileReader or Blob is not supported by browser.');
-      }
-   }
+   //                // file types
+   //                // ['.pdf', '.docx', '.jpg', '.jpeg', '.png', '.xlsx', '.xls', '.txt']
+   //                let type = 'unknown';
+   //                switch (header) {
+   //                   case '255044462D312E':
+   //                      type = 'application/pdf'; // pdf
+   //                      break;
+   //                   case '504B030414000600':
+   //                      type = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'; // docx
+   //                      break;
+   //                   case '504B030414000600':
+   //                      type = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'; // xlsx
+   //                      break;
+   //                   case 'FFD8FFE2':
+   //                   case 'FFD8FFE0':
+   //                   case 'FFD8FFE1':
+   //                      type = 'image/jpeg'; // jpeg
+   //                      break;
+   //                   case '89504E47':
+   //                      type = 'image/png'; // png
+   //                      break;
+   //                   case 'FFD8FF':
+   //                      type = 'jpg'; // jpg
+   //                      break;
+   //                   case 'D0CF11E0':
+   //                      type = 'application/vnd.ms-excel'; // xls
+   //                      break;
+   //                   case '504B0304':
+   //                      type = 'application/zip'; // zip folder
+   //                      break;
+   //                   case '52617221':
+   //                      type = 'application/vnd.rar'; // rar folder
+   //                      break;
+   //                   case 'EFBBBF':
+   //                      type = 'text/plain'; // txt
+   //                      break;
+   //                }
+   //                if (file.type !== type) {
+   //                   const type = 'text-red-600 text-sm font-normal';
+   //                   const text = 'Invalid file type. Please try again';
+   //                   output = errorsFileMime(type, text);
+   //                   $('#subFile-error-mime-message').show();
+   //                   errFileSubMime = true;
+   //                } else {
+   //                   $('#subFile-error-mime-message').hide();
+   //                }
+   //             };
+   //             fileReader.readAsArrayBuffer(file);
+   //          }
+   //       });
+   //    } 
+   // }
 });
