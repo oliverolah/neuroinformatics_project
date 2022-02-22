@@ -2,10 +2,10 @@ from django import forms
 from django.forms import ModelForm
 from .models import SubmitData
 from django.core.exceptions import ValidationError
-from django.core.validators import RegexValidator
-# import re
 import os
 import magic
+# from django.core.validators import RegexValidator
+# import re
 
 
 # Submit Data form for SubmitData model table DB
@@ -34,7 +34,6 @@ class SubmitDataForm(forms.ModelForm):
          'placeholder': 'Your title',
          'required': True,
          # 'strip': False,
-         # 'trim_whitespace': False,
       })
       self.fields['firstName'].widget.attrs.update({
          'class': 'w-full rounded-md form-control', 
@@ -112,7 +111,7 @@ class SubmitDataForm(forms.ModelForm):
    
    def clean_submitFile(self):
       submitFile = self.cleaned_data['submitFile']
-      max_file_limit = 10 * 1024 *1024
+      max_file_limit = 10 * 1024 *1024 #10MB
       if submitFile.size > max_file_limit:
          message = 'File size is greater than 10MB. Please, upload the file with a smaller size'
          raise ValidationError(message)
@@ -138,36 +137,40 @@ class SubmitDataForm(forms.ModelForm):
          raise ValidationError('Please upload a file with a valid extension')
       return submitFile 
    
-   def clean_submitFile(self):
-      submitFile = self.cleaned_data['submitFile']
-      valid_mime_types = [
-         'application/pdf', 
-         'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
-         'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-         'image/jpeg', 
-         'image/png', 
-         'jpg', 
-         'application/vnd.ms-excel', 
-         'application/zip', 
-         'application/vnd.rar',
-         'text/plain'
-      ]
-      file_mime_type = magic.from_buffer(submitFile.read(2048), mime=True)
-      if file_mime_type not in valid_mime_types:
-         raise ValidationError('Invalid file type. Please try again')
-      return submitFile
+   # def clean_submitFile(self):
+   #    submitFile = self.cleaned_data['submitFile']
+   #    valid_mime_types = [
+   #       'application/pdf', 
+   #       'application/vnd.openxmlformats-officedocument.wordprocessingml.document', 
+   #       'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+   #       'image/jpeg', 
+   #       'image/png', 
+   #       'jpg', 
+   #       'application/vnd.ms-excel', 
+   #       'application/zip', 
+   #       'application/vnd.rar',
+   #       'text/plain'
+   #    ]
+   #    file_mime_type = magic.from_buffer(submitFile.read(2048), mime=True)
+   #    if file_mime_type not in valid_mime_types:
+   #       raise ValidationError('Invalid file type. Please try again')
+   #    return submitFile
    
-   # def clean_strFields(self):
-   #    title = self.cleaned_data.get['title']
+   # def clean_title(self):
+   #    title = self.cleaned_data['title']
    #    firstName = self.cleaned_data.get['firstName']
    #    lastName = self.cleaned_data.get['lastName']
    #    email = self.cleaned_data.get['email']
    #    description = self.cleaned_data.get['description']
-   #    # submitFile = self.cleaned_data.get['submitFile']
-   #    empty_val = ''
+   #    submitFile = self.cleaned_data.get['submitFile']
+   #    # empty_val = ''
    #    str_field = [title, firstName, lastName, email, description]
    #    for field in str_field:
-   #       if str_field == empty_val:
+   #       if not str_field:
    #          message = 'This field is required'
    #          raise ValidationError(message)
    #    return str_field
+   #    if not title:
+   #       message = 'This field is required'
+   #       raise ValidationError(message)
+   #    return title
