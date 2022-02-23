@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def returnContactUsPage(request):
-  return render(request, "homeroots/home.html")
+  return render(request, "contactus/contact_us_page.html")
