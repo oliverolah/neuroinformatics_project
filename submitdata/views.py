@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from django.http import HttpResponse, JsonResponse
+from django.http import JsonResponse # add later => , HttpResponse
 from .models import SubmitData
 from .forms import SubmitDataForm
-from django.core.mail import send_mail, BadHeaderError
+# from django.core.mail import send_mail, BadHeaderError
 
 
 def returnSubmitDataPage(request):
