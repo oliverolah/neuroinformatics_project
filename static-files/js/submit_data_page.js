@@ -12,11 +12,11 @@ const url = '';
 const titleErrMsg = document.getElementById('title-error-message');
 const fNameErrMsg = document.getElementById('fname-error-message');
 const lNameErrMsg = document.getElementById('lname-error-message');
-const emailErrMsg = document.getElementById('email-error-message');
+// const emailErrMsg = document.getElementById('email-error-message');
 const descErrMsg = document.getElementById('desc-error-message');
 const subFileSizeErrMsg = document.getElementById('subFile-error-size-message');
 const subFileExtErrMsg = document.getElementById('subFile-error-ext-message');
-const subFileMimeErrMsg = document.getElementById('subFile-error-mime-message');
+// const subFileMimeErrMsg = document.getElementById('subFile-error-mime-message');
 const submitBtn = document.getElementById('submit-btn');
 
 const handleSubmitAlerts = (type, text) => {
@@ -128,13 +128,13 @@ $(document).ready(function () {
       `
    }
 
-   const errorEmailTemp = (type, text) => {
-      emailErrMsg.innerHTML = `
-      <div class="my-2">
-         <span class="${type}">${text}</span>
-      </div>
-      `
-   }
+   // const errorEmailTemp = (type, text) => {
+   //    emailErrMsg.innerHTML = `
+   //    <div class="my-2">
+   //       <span class="${type}">${text}</span>
+   //    </div>
+   //    `
+   // }
 
    const errorDescTemp = (type, text) => {
       descErrMsg.innerHTML = `
