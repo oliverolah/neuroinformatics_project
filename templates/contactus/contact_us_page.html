@@ -15,7 +15,45 @@
   <!-- Navigation bar -->
   {% include "navbar.html" %}
 
-  
+  <!-- DIV for both left/right containers(alignment) -->
+  <main class="block mx-auto w-11/12 xl:w-10/12">
+    <div class="lg:flex">
+      <!-- Left/Top Part -->
+      <div class="w-full mb-14">
+        <div class="my-14">
+          <h1 class="text-4xl font-medium pb-7 lg:text-5xl xl:text-6xl">Contact us</h1>
+          <p class="w-2/3 text-lg leading-6">If you wish to tell us anything, please do not hesitate to contact us.</p>
+        </div>
+        <div class="block">
+          <div class="flex gap-4 mb-7">
+            <div class="my-auto">
+              <img class="w-7" src='{% static "icons/location-address-logo.png" %}' alt="Location Logo">
+            </div>
+            <div>
+              <p class="text-base leading-6">Cardiff Metropolitan University<br/>
+                Llandaff Campus, Western Avenue,<br/> Cardiff, CF5 2YB</p>
+            </div>
+          </div>
+          <div class="flex gap-4 mb-7">
+            <div class="my-auto">
+              <img class="w-7" src='{% static "icons/telephone-logo.png" %}' alt="Telephone Logo">
+            </div>
+            <div>
+              <p class="text-base leading-6">+44 (029) 2041 6070</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right/Bottom Part -->
+      <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
+        <div class="mx-auto my-auto py-10">
+          <h1 class="text-3xl font-semibold">The Contact us form</h1>
+          <!-- Add contact form -->
+        </div>
+      </div>
+    </div>
+  </main>
 
   <!-- Footer -->
   {% include "footer.html" %}
