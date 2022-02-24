@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     'neurons', 
     'theme', # This is for tailwindcss
     'submitdata',
+    'contactus',
     
     # 3rd party apps
     'tailwind',
