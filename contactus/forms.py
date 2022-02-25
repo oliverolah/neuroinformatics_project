@@ -1,6 +1,7 @@
 from django import forms
 from django.forms import ModelForm
 from .models import ContactUsData
+from django.core.exceptions import ValidationError
 
 
 class ContactUsDataForm(forms.ModelForm):
@@ -9,7 +10,7 @@ class ContactUsDataForm(forms.ModelForm):
     attrs={
       'class': 'w-full rounded-md',
       'placeholder': 'Your title',
-      'required': True
+      'required': True,
     }
   ))
   firstName = forms.CharField(widget=forms.TextInput(
@@ -51,3 +52,19 @@ class ContactUsDataForm(forms.ModelForm):
       'email',
       'description'
     )
+
+
+  def clean(self):
+    cleaned_data = self.cleaned_data
+    print('Data instance information: ', cleaned_data)
+    return cleaned_data
+  
+  def clean_title(self):
+    title = self.cleaned_data['title']
+    if len(title) < 5:
+      message = 'The title should be at least five characters long'
+      raise ValidationError(message)
+    elif title.isalpha() == False:
+      message = 'The title should contain only characters'
+      raise ValidationError(message)
+    return self.cleaned_data.get('title', '').strip()
