@@ -33,6 +33,7 @@ INSTALLED_APPS = [
     'theme', # This is for tailwindcss
     'submitdata',
     'contactus',
+    'aboutcontent',
     
     # 3rd party apps
     'tailwind',
