@@ -63,9 +63,11 @@ $(document).ready(function () {
         console.log(data.status);
         if (data.status.result === 'failed') {
           checkTitle();
+          checkFirstName();
         } else {
           successSubmit();
           $('#title-error-message').hide();
+          $('#fname-error-message').hide();
         }
       },
       error: function (error) {
@@ -90,8 +92,19 @@ $(document).ready(function () {
     `
   }
 
+  const errorFirstNameTemp = (type, text) => {
+    fNameErrMsg.innerHTML = `
+    <div class="my-2">
+        <span class="${type}">${text}</span>
+    </div>
+    `
+  }
+
   $('#title-error-message').hide();
   var errTitle = false;
+
+  $('#fname-error-message').hide();
+  var errFirstName = false;
 
   function checkTitle() {
     let letterPattern = /^[a-zA-Z]*$/; // /^[a-zA-Z\s]*$/; - with spaces ===> (\s)
@@ -112,6 +125,28 @@ $(document).ready(function () {
         errTitle = true;
     } else {
         $('#title-error-message').hide();
+    }
+  };
+
+  function checkFirstName() {
+    let letterPattern = /^[a-zA-Z]*$/;
+    let fN = $(fName).val();
+    let fNameLength = $(fName).val().length;
+    const numOfChars = 2;
+    if (!letterPattern.test(fN)) {
+        const type = 'text-red-600 text-sm font-normal';
+        const text = 'The first name should contain only characters';
+        errorFirstNameTemp(type, text);
+        $('#fname-error-message').show();
+        errFirstName = true;
+    } else if (fNameLength < numOfChars) {
+        const type = 'text-red-600 text-sm font-normal';
+        const text = 'The first name should be at least two characters long';
+        errorFirstNameTemp(type, text);
+        $('#fname-error-message').show();
+        errFirstName = true;
+    } else {
+        $('#fname-error-message').hide();
     }
   };
 });
