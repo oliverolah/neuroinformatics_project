@@ -177,8 +177,8 @@ $(document).ready(function () {
    $('#lname-error-message').hide(); 
    var errLastName = false;
 
-   $('#email-error-message').hide();
-   var errEmail = false;
+   // $('#email-error-message').hide();
+   // var errEmail = false;
 
    $('#desc-error-message').hide();
    var errDesc = false;

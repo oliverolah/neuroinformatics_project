@@ -90,8 +90,8 @@ class ContactUsDataForm(forms.ModelForm):
     return self.cleaned_data.get('lastName', '').strip()
   
   def clean_description(self):
-      description = self.cleaned_data['description']
-      if len(description) < 5:
-        message = 'The description should be at least five characters long'
-        raise ValidationError(message)
-      return self.cleaned_data.get('description', '').strip()
+    description = self.cleaned_data['description']
+    if len(description) < 5:
+      message = 'The description should be at least five characters long'
+      raise ValidationError(message)
+    return self.cleaned_data.get('description', '').strip()
