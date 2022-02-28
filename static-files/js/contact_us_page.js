@@ -17,7 +17,7 @@ const submitBtn = document.getElementById('submit-btn');
 const handleSubmitAlerts = (type, text) => {
   alertBox.innerHTML = `
   <div class="mt-5">
-    <span class="${type}">${text}</span>
+    <span class="submit-${type}">${text}</span>
   </div>
   `
 };
@@ -36,7 +36,7 @@ $(document).ready(function () {
 
     function successSubmit() {
       form.reset();
-      const type = 'text-successGreen text-lg font-medium';
+      const type = 'success-outcome';
       const text = 'Submitted successfully!';
       handleSubmitAlerts(type, text);
       setTimeout(() => {
@@ -46,7 +46,7 @@ $(document).ready(function () {
 
     function errorSubmit() {
       form.reset();
-      const type = 'text-red-600 text-lg font-medium';
+      const type = 'failed-outcome';
       const text = 'Submission failed! If you are unable to submit your data, please contact us directly!';
       handleSubmitAlerts(type, text);
       setTimeout(() => {
