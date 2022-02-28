@@ -63,9 +63,15 @@ $(document).ready(function () {
         console.log(data.status);
         if (data.status.result === 'failed') {
           checkTitle();
+          checkFirstName();
+          checkLastName();
+          checkDesc();
         } else {
           successSubmit();
           $('#title-error-message').hide();
+          $('#fname-error-message').hide();
+          $('#lname-error-message').hide();
+          $('#desc-error-message').hide();
         }
       },
       error: function (error) {
@@ -85,7 +91,31 @@ $(document).ready(function () {
   const errorTitleTemp = (type, text) => {
     titleErrMsg.innerHTML = `
     <div class="my-2">
-        <span class="${type}">${text}</span>
+      <span class="${type}">${text}</span>
+    </div>
+    `
+  }
+
+  const errorFirstNameTemp = (type, text) => {
+    fNameErrMsg.innerHTML = `
+    <div class="my-2">
+      <span class="${type}">${text}</span>
+    </div>
+    `
+  }
+
+  const errorLastNameTemp = (type, text) => {
+    lNameErrMsg.innerHTML = `
+    <div class="my-2">
+      <span class="${type}">${text}</span>
+    </div>
+    `
+  }
+
+  const errorDescTemp = (type, text) => {
+    descErrMsg.innerHTML = `
+    <div class="my-2">
+      <span class="${type}">${text}</span>
     </div>
     `
   }
@@ -93,25 +123,92 @@ $(document).ready(function () {
   $('#title-error-message').hide();
   var errTitle = false;
 
+  $('#fname-error-message').hide();
+  var errFirstName = false;
+
+  $('#lname-error-message').hide(); 
+  var errLastName = false;
+
+  $('#desc-error-message').hide();
+  var errDesc = false;
+
   function checkTitle() {
     let letterPattern = /^[a-zA-Z]*$/; // /^[a-zA-Z\s]*$/; - with spaces ===> (\s)
     let t = $(title).val();
     let titleLength = $(title).val().length;
     const numOfChars = 5;
     if (!letterPattern.test(t)) {
-        const type = 'text-red-600 text-sm font-normal';
-        const text = 'The title should contain only characters';
-        errorTitleTemp(type, text);
-        $('#title-error-message').show();
-        errTitle = true;
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The title should contain only characters';
+      errorTitleTemp(type, text);
+      $('#title-error-message').show();
+      errTitle = true;
     } else if (titleLength < numOfChars) {
-        const type = 'text-red-600 text-sm font-normal';
-        const text = 'The title should be at least five characters long';
-        errorTitleTemp(type, text);
-        $('#title-error-message').show();
-        errTitle = true;
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The title should be at least five characters long';
+      errorTitleTemp(type, text);
+      $('#title-error-message').show();
+      errTitle = true;
     } else {
-        $('#title-error-message').hide();
+      $('#title-error-message').hide();
+    }
+  };
+
+  function checkFirstName() {
+    let letterPattern = /^[a-zA-Z]*$/;
+    let fN = $(fName).val();
+    let fNameLength = $(fName).val().length;
+    const numOfChars = 2;
+    if (!letterPattern.test(fN)) {
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The first name should contain only characters';
+      errorFirstNameTemp(type, text);
+      $('#fname-error-message').show();
+      errFirstName = true;
+    } else if (fNameLength < numOfChars) {
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The first name should be at least two characters long';
+      errorFirstNameTemp(type, text);
+      $('#fname-error-message').show();
+      errFirstName = true;
+    } else {
+      $('#fname-error-message').hide();
+    }
+  };
+
+  function checkLastName() {
+    let letterPattern = /^[a-zA-Z]*$/;
+    let lN = $(lName).val();
+    let lNameLength = $(lName).val().length;
+    const numOfChars = 2;
+    if (!letterPattern.test(lN)) {
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The last name should contain only characters';
+      errorLastNameTemp(type, text);
+      $('#lname-error-message').show();
+      errLastName = true;
+    } else if (lNameLength < numOfChars) {
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The last name should be at least two characters long';
+      errorLastNameTemp(type, text);
+      $('#lname-error-message').show();
+      errLastName = true;
+    } else {
+      $('#lname-error-message').hide();
+    }
+  };
+
+  function checkDesc() {
+    let descLength = $(desc).val().length;
+    const numOfChars = 5;
+    if (descLength < numOfChars) {
+      const type = 'text-red-600 text-sm font-normal';
+      const text = 'The description should be at least five characters long';
+      errorDescTemp(type, text);
+      $('#desc-error-message').show();
+      errDesc = true;
+    } else {
+      $('#desc-error-message').hide();
     }
   };
 });
