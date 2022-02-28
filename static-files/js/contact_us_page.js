@@ -64,10 +64,12 @@ $(document).ready(function () {
         if (data.status.result === 'failed') {
           checkTitle();
           checkFirstName();
+          checkLastName();
         } else {
           successSubmit();
           $('#title-error-message').hide();
           $('#fname-error-message').hide();
+          $('#lname-error-message').hide();
         }
       },
       error: function (error) {
@@ -100,11 +102,22 @@ $(document).ready(function () {
     `
   }
 
+  const errorLastNameTemp = (type, text) => {
+    lNameErrMsg.innerHTML = `
+    <div class="my-2">
+        <span class="${type}">${text}</span>
+    </div>
+    `
+  }
+
   $('#title-error-message').hide();
   var errTitle = false;
 
   $('#fname-error-message').hide();
   var errFirstName = false;
+
+  $('#lname-error-message').hide(); 
+  var errLastName = false;
 
   function checkTitle() {
     let letterPattern = /^[a-zA-Z]*$/; // /^[a-zA-Z\s]*$/; - with spaces ===> (\s)
@@ -147,6 +160,28 @@ $(document).ready(function () {
         errFirstName = true;
     } else {
         $('#fname-error-message').hide();
+    }
+  };
+
+  function checkLastName() {
+    let letterPattern = /^[a-zA-Z]*$/;
+    let lN = $(lName).val();
+    let lNameLength = $(lName).val().length;
+    const numOfChars = 2;
+    if (!letterPattern.test(lN)) {
+        const type = 'text-red-600 text-sm font-normal';
+        const text = 'The last name should contain only characters';
+        errorLastNameTemp(type, text);
+        $('#lname-error-message').show();
+        errLastName = true;
+    } else if (lNameLength < numOfChars) {
+        const type = 'text-red-600 text-sm font-normal';
+        const text = 'The last name should be at least two characters long';
+        errorLastNameTemp(type, text);
+        $('#lname-error-message').show();
+        errLastName = true;
+    } else {
+        $('#lname-error-message').hide();
     }
   };
 });

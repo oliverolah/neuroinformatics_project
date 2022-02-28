@@ -78,3 +78,13 @@ class ContactUsDataForm(forms.ModelForm):
       message = 'The first name should contain only characters'
       raise ValidationError(message)
     return self.cleaned_data.get('firstName', '').strip()
+  
+  def clean_lastName(self):
+    lastName = self.cleaned_data['lastName']
+    if len(lastName) < 2:
+      message = 'The first name should be at least two characters long'
+      raise ValidationError(message)
+    elif lastName.isalpha() == False:
+      message = 'The first name should contain only characters'
+      raise ValidationError(message)
+    return self.cleaned_data.get('lastName', '').strip()
