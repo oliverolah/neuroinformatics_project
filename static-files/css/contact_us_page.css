@@ -1,0 +1,13 @@
+.submit-success-outcome {
+  color: #10A52E;
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 500;
+}
+
+.submit-failed-outcome {
+  color: rgb(220 38 38);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.75rem; /* 28px */
+  font-weight: 500;
+}
