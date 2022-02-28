@@ -34,6 +34,7 @@ module.exports = {
         '../../templates/submitdata/submit_data_form.html',
         '../../templates/contactus/contact_us_page.html',
         '../../templates/contactus/contact_us_form.html',
+        '../../templates/aboutcontent/about_page.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
