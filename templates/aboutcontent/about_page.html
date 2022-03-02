@@ -11,6 +11,214 @@
   {% tailwind_css %}
 </head>
 <body>
-  <h1>Hello</h1>
+
+  <!-- Navigation bar -->
+  {% include "navbar.html" %}
+
+  <div class="block mx-auto w-11/12 xl:w-10/12">
+
+    <!-- Page title -->
+    <div class="mt-14">
+      <h1 class="text-4xl font-medium pb-14 lg:text-5xl xl:text-6xl">About Extrasynaptome</h1>
+    </div>
+    
+    <!--The project -->
+    <div>
+      <h2 class="text-3xl font-medium mb-2">The project</h2>
+      <p class="mb-1 leading-6">Extrasynaptome Data Repository is a web application concentrated on network neuroscience and connectomics of the nervous systems - such as of a 1mm long roundworm called Caenorhabditis elegans. That is to aid bioengineering research focused on human being’s brain functioning. The web application will act as a centralized database repository that will be able to curate, store and visualise the wired and wireless connectomes of neuron network systems to perform network analyses and expand on the already existing knowledge.</p>
+      <p class="leading-6">This project is the first centralised resource for studying a class of critically important biological networks. With the potential for expansion and the aim to form a larger grant application, this project aspires to serve an international userbase to support and accelerate research in multiple subfields of neuroscience. </p>
+    </div>
+    
+    <!-- The mission -->
+    <div>
+      <h2 class="text-3xl font-medium mb-2 mt-6">The mission</h2>
+      <p class="leading-6">The aim is to develop an online resource to curate and centralise data related to extrasynaptic signalling in e.g. C. elegans, entailing:</p>
+      <div class="flex">
+        <ul class="my-5 w-3/4 mx-auto list-disc space-y-1">
+          <li class="italic ">a database and ontology to organise the available data</li>
+          <li class="italic">a tool for network analysis and visualisation to assist in profiling the routes of extrasynaptic transmission, and</li>
+          <li class="italic">a community portal to engage wider participation in the curation effort</li>
+        </ul>
+      </div>
+      <p class="leading-6">By developing this repository, it is hoped that the healthcare system shall be benefited - more specifically the areas of Neurology and psychiatry to minimise the costs and enhance ineffective treatments by gathering enough information to aid the competent people in their work to accelerate the quality of patient treatment.  </p>
+    </div>
+    
+    <!-- The principles -->
+    <div>
+      <h2 class="text-3xl font-medium mb-2 mt-6">The principles</h2>
+      <!-- Information -->
+      <h3 class="italic text-xl font-medium mb-2">Information</h3>
+      <p class="leading-6">To pursue the quality of the information given by the community to the community transformed into new knowledge and insights enhancing the processes for its experts.</p>
+      <!-- Community -->
+      <h3 class="italic text-xl font-medium my-2">Community</h3>
+      <p class="leading-6">To engage with the community of competent people by allowing them to contribute to what is known and to shed a light on what is unknown. The community represents a source of information from which new inspirations arise.</p>
+      <!-- People -->
+      <h3 class="italic text-xl font-medium my-2">People</h3>
+      <p class="leading-6">To help the patients who are in need by enhancing the healthcare treatments and other related processes thanks to the quality of the information and competent community of experts.</p>
+    </div>
+
+    <!-- The founder -->
+    <div>
+      <h2 class="text-3xl font-medium my-6">The founder</h2>
+      <!-- Profile img & name -->
+      <div>
+        <div class="flex">
+          <img class="w-6/12 mx-auto rounded-md shadow-xl" src="#" alt="Founder img">
+        </div>
+        <h3 class="italic text-lg font-medium my-2 text-center w-6/12 mx-auto">Dr Barry Bentley</h3>
+      </div>
+      <!-- Info card -->
+      <div class="mx-auto w-9/12 bg-zinc-100 flex rounded-md shadow-xl mt-6 mb-8">
+        <div class="mx-4 my-8 space-y-2">
+          <p class="leading-6 italic text-zinc-800 font-medium">- Founder of Extrasynaptome Data Repository project</p>
+          <p class="leading-6 italic text-zinc-800 font-medium">- Senior Lecturer in Computer Science at Cardiff Metropolitan University in Cardiff</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="italic text-xl font-medium mb-2">About me:</h3>
+        <div class="space-y-1">
+          <p class="leading-6">I completed and received my Ph.D. at the University of Cambridge where I worked at the MRC Laboratory of Molecular Biology in the areas of computational neuroscience and bioinformatics. I have conducted research and consultancy works for multiple organisations including the Open University, the University of Oxford, the European Space Agency, and ARM Holdings. But my current research interests lie in the development and application of computational tools for biological and medical problems, with a particular interest in the areas of neuroscience, ageing, and cryobiology.</p>
+          <p class="leading-6">This web application is a continuation of my interest which sparked when I started to work on my Ph.D. thesis. By accumulating the knowledge and all of my ideas I had that the time I decided to produce a technology that would allow me to pursue the path of research in an attempt to contribute to the field of medicine. Through extensive research, the results had shown me that the fields of neurology and psychiatry suffer from high costs to treat its patients (due to the ageing population) in the UK due to inefficient treatments preceded by the lack of quality technological tools and data information.</p>
+          <p class="leading-6">By developing Extrasynaptome Data Repository I hope that the field of medicine will benefit from it. My wish for this project is to transform it into a robust and flexible bank of data information from which competent people shall be able to make their qualified conclusions. Through this technology, I would want to improve the environment in which the patients shall be treated under better treatment procedures with experts backed by reliable, accessible and up-to-date information. Let this project be the beginning of that.</p>
+        </div>
+        <!-- Social media  -->
+        <h3 class="italic text-xl font-medium my-2">Find me also here:</h3>
+        <div class="grid grid-cols-3 bg-zinc-100 rounded-md shadow-xl px-10 py-7 gap-y-5 justify-items-center w-4/5 mx-auto">
+          <!-- personal website -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/personal-website-black-logo.png" %}' alt="Personal Website Logo">
+              </a>
+            </div>
+          </div>
+          <!-- linkedin -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/linkedin-black-logo.png" %}' alt="LinkedIn Logo">
+              </a>
+            </div>
+          </div>
+          <!-- github -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/github-black-logo.png" %}' alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <!-- facebook -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/facebook-black-logo.png" %}' alt="Facebook Logo">
+              </a>
+            </div>
+          </div>
+          <!-- instagram -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/instagram-black-logo.png" %}' alt="Instagram Logo">
+              </a>
+            </div>
+          </div>
+          <!-- twitter -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/twitter-black-logo.png" %}' alt="Twitter Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Software developer -->
+    <div class="mb-14">
+      <h2 class="text-3xl font-medium my-6">The software developer</h2>
+      <!-- Profile img & name -->
+      <div>
+        <div class="flex">
+          <img class="w-6/12 mx-auto rounded-md shadow-xl" src='{% static "images/sw-dev.jpg" %}' alt="Software developer img">
+        </div>
+        <h3 class="italic text-lg font-medium my-2 text-center w-6/12 mx-auto">BSc Oliver Olah</h3>
+      </div>
+      <!-- Info card -->
+      <div class="mx-auto w-9/12 bg-zinc-100 flex rounded-md shadow-xl mt-6 mb-8">
+        <div class="mx-4 my-8 space-y-2">
+          <p class="leading-6 italic text-zinc-800 font-medium">- Intern Software developer of Extrasynaptome Data Repository project
+          </p>
+          <p class="leading-6 italic text-zinc-800 font-medium">- MSc student at Cardiff Metropolitan University in Cardiff</p>
+          <p class="leading-6 italic text-zinc-800 font-medium">- Studying IT Management</p>
+        </div>
+      </div>
+      <div>
+        <h3 class="italic text-xl font-medium mb-2">A short message:</h3>
+        <div class="space-y-1">
+          <p class="leading-6">Ahoj, I am Oliver Olah intern software developer of the Extrasynaptome Data Repository project. I am a second-year MSc student at Cardiff Metropolitan University where I study Information Technology Management. I have become a part of this project in July 2021 after an offer from Cardiff Met’s Programme Director for the Computing and Information MSc programmes in the Department of Computing Dr Ambikesh Jayal and the founder of this project Dr Barry Bentley. I took this opportunity simply to learn but also because it was a part of my course curriculum.</p>
+          <p class="leading-6">That was not the only thing that crossed my mind when I was considering working on this project. 
+            Being an MSc student in IT Management I knew I had to find something worthwhile from which I 
+            would benefit also in the long-distant future. Something where I would be able to learn hard skills as 
+            well as hard skills such as programming or project management. This was it. Being a part of this 
+            project has taught me to apply the knowledge which I hoped to learn in the future once I would enter 
+            the industry. This opportunity has speeded up this process. Because I was the only developer (at least 
+            during the first year of production) in the project I had to rely only on myself and on Dr Bentley’s 
+            pieces of advice. That brought the opportunity for me to learn and fail as much as I could to progress. 
+            I have got the opportunity to learn to program on a completely new level by also understanding the 
+            mechanics in the background; moreover, it allowed me to manage the whole process of the 
+            development that requires managerial skills as well as technical to conduct the project correctly also 
+            in constructive communication with my supervisor (also Dr Bentley). Despite the initial doubts, I took 
+            this challenge to see where it will take me no matter how difficult it might have seen at the beginning. 
+            Believe me, I did everything I could. Well, see for yourself – the product of my effort. I hope you will 
+            enjoy this web application.</p>
+          <p class="leading-6"></p>
+        </div>
+        <!-- Education -->
+        <h3 class="italic text-xl font-medium my-2">My education</h3>
+        <div class="flex">
+          <ul class="my-5 w-3/4 mx-auto list-disc space-y-1">
+            <li class="italic ">2014-2016 – International Baccalaureate at Braeburn Garden Estate in Nairobi, Kenya</li>
+            <li class="italic">2016-2020 – BSc in Information Technology Management for Business at Glasgow Caledonian University in Glasgow, Scotland (UK)</li>
+            <li class="italic">2020-2022 – MSc in Information Technology Management in Cardiff Metropolitan University in Cardiff, Wales (UK) </li>
+          </ul>
+        </div>
+        <!-- Social media  -->
+        <h3 class="italic text-xl font-medium my-2">Find me also here:</h3>
+        <div class="grid grid-cols-3 bg-zinc-100 rounded-md shadow-xl px-10 py-7 gap-y-5 justify-items-center w-4/5 mx-auto">
+          <!-- linkedin -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/linkedin-black-logo.png" %}' alt="LinkedIn Logo">
+              </a>
+            </div>
+          </div>
+          <!-- github -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/github-black-logo.png" %}' alt="GitHub Logo">
+              </a>
+            </div>
+          </div>
+          <!-- facebook -->
+          <div>
+            <div class="bg-white rounded-full px-3 py-3 transition ease-out hover:scale-110 duration-100">
+              <a href="#">
+                <img class="w-7 mx-auto" src='{% static "icons/facebook-black-logo.png" %}' alt="Facebook Logo">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+
 </body>
 </html>
