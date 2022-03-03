@@ -6,11 +6,13 @@ from django.core.exceptions import ValidationError
 
 class ContactUsDataForm(forms.ModelForm):
   
-  title = forms.CharField(widget=forms.TextInput(
+  title = forms.CharField(widget=forms.Textarea(
     attrs={
       'class': 'w-full rounded-md',
       'placeholder': 'Your title',
       'required': True,
+      'rows': '1',
+      'cols':'50',
     }
   ))
   firstName = forms.CharField(widget=forms.TextInput(
@@ -63,9 +65,6 @@ class ContactUsDataForm(forms.ModelForm):
     title = self.cleaned_data['title']
     if len(title) < 5:
       message = 'The title should be at least five characters long'
-      raise ValidationError(message)
-    elif title.isalpha() == False:
-      message = 'The title should contain only characters'
       raise ValidationError(message)
     return self.cleaned_data.get('title', '').strip()
   

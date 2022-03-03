@@ -3,7 +3,7 @@ from django.db import models
 
 class ContactUsData(models.Model):
   submitId = models.AutoField(primary_key=True)
-  title = models.CharField(max_length=50, verbose_name="Title")
+  title = models.TextField(max_length=50, verbose_name="Title")
   firstName = models.CharField(max_length=100, verbose_name='FirstName')
   lastName = models.CharField(max_length=100, verbose_name="Last Name")
   email = models.EmailField(max_length=50, verbose_name="Email Address")
