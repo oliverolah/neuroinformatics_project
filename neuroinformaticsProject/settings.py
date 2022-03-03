@@ -182,10 +182,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 # testing email settings  *change in production mode to 3rd party vendor
-# EMAIL_HOST = 'localhost'
-# EMAIL_PORT = '1025'
-# EMAIL_POST_USER = ''
-# EMAIL_HOST_PASSWORD = ''
-# EMAIL_USER_TLS = False
-# EMAIL_USE_SSL = False
+# in production change from 'console' to 'smtp'
+    # from 'django.core.mail.backends.console.EmailBackend'
+    # to 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_HOST = config('EM_HOST')
+# EMAIL_PORT = config('EM_PORT')
+# EMAIL_POST_USER = config('ADMIN_EMAIL_USER')
+# EMAIL_HOST_PASSWORD = config('ADMIN_EMAIL_PASSWORD')
+# EMAIL_USE_TLS = True
+# EMAIL_USE_SSL = False
