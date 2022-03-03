@@ -34,6 +34,8 @@ class SubmitDataForm(forms.ModelForm):
          'placeholder': 'Your title',
          'required': True,
          # 'strip': False,
+         'rows': '1',
+         'cols':'50', 
       })
       self.fields['firstName'].widget.attrs.update({
          'class': 'w-full rounded-md form-control', 
@@ -68,9 +70,6 @@ class SubmitDataForm(forms.ModelForm):
       title = self.cleaned_data['title']
       if len(title) < 5:
          message = 'The title should be at least five characters long'
-         raise ValidationError(message)
-      elif title.isalpha() == False:
-         message = 'The title should contain only characters'
          raise ValidationError(message)
       return self.cleaned_data.get('title', '').strip()
    
