@@ -137,13 +137,7 @@ $(document).ready(function () {
     let t = $(title).val();
     let titleLength = $(title).val().length;
     const numOfChars = 5;
-    if (!letterPattern.test(t)) {
-      const type = 'text-red-600 text-sm font-normal';
-      const text = 'The title should contain only characters';
-      errorTitleTemp(type, text);
-      $('#title-error-message').show();
-      errTitle = true;
-    } else if (titleLength < numOfChars) {
+    if (titleLength < numOfChars) {
       const type = 'text-red-600 text-sm font-normal';
       const text = 'The title should be at least five characters long';
       errorTitleTemp(type, text);
