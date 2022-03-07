@@ -1,3 +1,6 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
-# Create your views here.
+
+def returnKeySourcesPage(request):
+  return render(request, "keysources/key_sources_page.html")

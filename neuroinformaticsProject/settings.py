@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'submitdata',
     'contactus',
     'aboutcontent',
+    'keysources',
     
     # 3rd party apps
     'tailwind',
