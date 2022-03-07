@@ -35,6 +35,7 @@ module.exports = {
         '../../templates/contactus/contact_us_page.html',
         '../../templates/contactus/contact_us_form.html',
         '../../templates/aboutcontent/about_page.html',
+        '../../templates/keysources/key_sources_page.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
