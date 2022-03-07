@@ -1,0 +1,57 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Sources</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  {% tailwind_css %}
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  {% include "navbar.html" %}
+
+  <div class="block mx-auto w-11/12 xl:w-10/12">
+
+    <!-- Content wrapper -->
+    <div class="lg:flex lg:justify-between lg:gap-5">
+      
+      <!-- Top/left container -->
+      <div>
+        <div class="mt-14">
+          <h1 class="text-4xl font-medium pb-14 lg:text-5xl xl:text-6xl">Key papers</h1>
+        </div>
+
+        <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
+          <div class="mx-auto my-auto py-10">
+            <h1 class="font-bold text-3xl text-center mx-9">Key papers coming soon</h1>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom/right container -->
+      <div>
+        <div class="mt-14">
+          <h1 class="text-4xl font-medium pb-14 lg:text-5xl xl:text-6xl">Key websites</h1>
+        </div>
+
+        <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
+          <div class="mx-auto my-auto py-10">
+            <h1 class="font-bold text-3xl text-center mx-9">Key websites coming soon</h1>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+
+</body>
+</html>

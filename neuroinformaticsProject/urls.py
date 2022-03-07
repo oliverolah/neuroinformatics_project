@@ -4,6 +4,7 @@ from homeroots.views import returnHomePage
 from submitdata.views import returnSubmitDataPage
 from contactus.views import returnContactUsPage
 from aboutcontent.views import returnAboutPage
+from keysources.views import returnKeySourcesPage
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -13,6 +14,7 @@ urlpatterns = [
     path(r'submit_data_page/', returnSubmitDataPage, name='submitdatapage'),
     path(r'contact_us_page/', returnContactUsPage, name='contactuspage'),
     path(r'about_page/', returnAboutPage, name='aboutpage'),
+    path(r'key_sources/', returnKeySourcesPage, name='keyappsources'),
 ] 
 
 if settings.DEBUG:
