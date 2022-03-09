@@ -12,9 +12,9 @@
 <body>
   
   {% for website in websites %}
-    <div class="mb-4">
-      <h3>{{ website.websiteName }}</h3>
-      <span>Website URL: </span><a href="{{ website.websiteUrl }}">{{ website.websiteUrl }}</a>
+    <div>
+      <h3 class="text-xl font-semibold text-cardiffMetSecondary lg:text-2xl">{{ website.websiteName }}</h3>
+      <span class="font-semibold">Website URL: </span><a class="hover:underline cursor-pointer" href="{{ website.websiteUrl }}">{{ website.websiteUrl }}</a>
     </div>
   {% endfor %}
 
