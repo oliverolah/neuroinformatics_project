@@ -12,9 +12,9 @@
 <body>
   
   {% for paper in papers %}
-    <div class="mb-4">
-      <h3>{{ paper.paperTitle }}</h3>
-      <a id="paper-download-link" href="{{paper.paperFile.url}}" download>Download</a>
+    <div>
+      <h3 class="text-xl font-semibold text-cardiffMetSecondary lg:text-2xl">{{ paper.paperTitle }}</h3>
+      <a class="text-cardiffMetPrimary text-sm" href="{{paper.paperFile.url}}" download>Download</a>
     </div>
   {% endfor %}
 
