@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Key Sources</title>
+  <title>Key Sources Page</title>
   <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
   {% tailwind_css %}
 </head>
@@ -28,7 +28,7 @@
 
         <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
           <div class="mx-auto my-auto py-10">
-            <h1 class="font-bold text-3xl text-center mx-9">Key papers coming soon</h1>
+            {% include "keysources/key_papers_table.html" %}
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
 
         <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
           <div class="mx-auto my-auto py-10">
-            <h1 class="font-bold text-3xl text-center mx-9">Key websites coming soon</h1>
+            {% include "keysources/key_websites_table.html" %}
           </div>
         </div>
       </div>

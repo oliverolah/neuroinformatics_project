@@ -1,0 +1,22 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Papers Data Table</title>
+  {% tailwind_css %}
+</head>
+<body>
+  
+  {% for paper in papers %}
+    <div class="mb-4">
+      <h3>{{ paper.paperTitle }}</h3>
+      <a id="paper-download-link" href="{{paper.paperFile.url}}" download>Download</a>
+    </div>
+  {% endfor %}
+
+</body>
+</html>

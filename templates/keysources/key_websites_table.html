@@ -1,0 +1,22 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Websites Data Table</title>
+  {% tailwind_css %}
+</head>
+<body>
+  
+  {% for website in websites %}
+    <div class="mb-4">
+      <h3>{{ website.websiteName }}</h3>
+      <span>Website URL: </span><a href="{{ website.websiteUrl }}">{{ website.websiteUrl }}</a>
+    </div>
+  {% endfor %}
+
+</body>
+</html>
