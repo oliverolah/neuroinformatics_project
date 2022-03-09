@@ -11,7 +11,12 @@
 </head>
 <body>
   
-  <h1>Key Websites</h1>
+  {% for website in websites %}
+    <div class="mb-4">
+      <h3>{{ website.websiteName }}</h3>
+      <span>Website URL: </span><a href="{{ website.websiteUrl }}">{{ website.websiteUrl }}</a>
+    </div>
+  {% endfor %}
 
 </body>
 </html>

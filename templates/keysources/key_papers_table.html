@@ -11,7 +11,12 @@
 </head>
 <body>
   
-  <h1>Key Papers</h1>
+  {% for paper in papers %}
+    <div class="mb-4">
+      <h3>{{ paper.paperTitle }}</h3>
+      <a id="paper-download-link" href="{{paper.paperFile.url}}" download>Download</a>
+    </div>
+  {% endfor %}
 
 </body>
 </html>
