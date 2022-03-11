@@ -14,7 +14,7 @@
   {% for paper in papers %}
     <div>
       <h3 class="text-xl font-semibold text-cardiffMetSecondary lg:text-2xl">{{ paper.paperTitle }}</h3>
-      <a class="text-cardiffMetPrimary text-sm" href="{{paper.paperFile.url}}" download>Download</a>
+      <a class="text-cardiffMetPrimary text-sm hover:underline" href="{{paper.paperFile.url}}" download>Download</a>
     </div>
   {% endfor %}
 
