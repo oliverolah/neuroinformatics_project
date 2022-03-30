@@ -1,0 +1,34 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualisation Page</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  {% tailwind_css %}
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  {% include "navbar.html" %}
+
+  <!-- Page content -->
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+
+  <script type="text/javascript">
+    const edgesDataFile = "{% static 'visualisations_data/20220329/edges.csv' %}";
+    const classesDataFile = "{% static 'visualisations_data/20220329/classes.csv' %}";
+    const neuronsDataFile = "{% static 'visualisations_data/20220329/neurons.csv' %}";
+    const connectomesDataFile = "{% static 'visualisations_data/20220329/connectomes.csv' %}";
+  </script>
+  <script src="{% static 'js/libs/d3.min.js' %}"></script>
+  <script src="{% static 'js/visualisations_data_page.js' %}"></script>
+  
+
+</body>
+</html>
