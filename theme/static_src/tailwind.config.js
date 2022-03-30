@@ -39,6 +39,7 @@ module.exports = {
         '../../templates/keysources/key_papers_table.html',
         '../../templates/keysources/key_websites_table.html',
         '../../templates/neurons/visualisations_page.html',
+        '../../templates/neurons/data_visualisations_container.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
