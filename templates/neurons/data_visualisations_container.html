@@ -64,20 +64,22 @@
 
     <!-- Visualisation container -->
     <div class="bg-zinc-100 rounded-md shadow-xl w-5/6 mx-auto mt-5">
-      <svg></svg>
+      <svg id="data-vis-container" width="83.3%"  height="384px" ></svg>
     </div>
-    
+
   </div>
   
   <!-- Page JS -->
   <script type="text/javascript">
-    const edgesDataFile = "{% static 'visualisations_data/20220329/edges.csv' %}";
-    const classesDataFile = "{% static 'visualisations_data/20220329/classes.csv' %}";
-    const neuronsDataFile = "{% static 'visualisations_data/20220329/neurons.csv' %}";
-    const connectomesDataFile = "{% static 'visualisations_data/20220329/connectomes.csv' %}";
+    const edgesDataFile = "{% static 'visualisations_data/20220329/csv/edges.csv' %}";
+    const classesDataFile = "{% static 'visualisations_data/20220329/csv/classes.csv' %}";
+    const neuronsDataFile = "{% static 'visualisations_data/20220329/csv/neurons.csv' %}";
+    const connectomesDataFile = "{% static 'visualisations_data/20220329/csv/connectomes.csv' %}";
+    // const nodesDataFile = "{% static 'visualisations_data/20220329/json/nodes.json' %}";
+    // const linksDataFile = "{% static 'visualisations_data/20220329/json/links.json' %}";
   </script>
   <script src="{% static 'js/libs/d3.min.js' %}"></script>
-  <script src="{% static 'js/visualisations_data_page.js' %}"></script>
+  <script type ="module" src="{% static 'js/visualisations_data_page.js' %}"></script>
 
 </body>
 </html>
