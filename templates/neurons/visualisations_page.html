@@ -16,19 +16,18 @@
   {% include "navbar.html" %}
 
   <!-- Page content -->
+  <main class="block mx-auto w-11/12 xl:w-10/12">
+    <!-- Page title -->
+    <div class="my-14">
+      <h1 class="text-4xl font-medium lg:text-5xl xl:text-6xl">C. elegans Data Visualisations</h1>
+    </div>
+  </main>
+
+  <!-- Data Visualisations -->
+  {% include "neurons/data_visualisations_container.html" %}
 
   <!-- Footer -->
   {% include "footer.html" %}
-
-  <script type="text/javascript">
-    const edgesDataFile = "{% static 'visualisations_data/20220329/edges.csv' %}";
-    const classesDataFile = "{% static 'visualisations_data/20220329/classes.csv' %}";
-    const neuronsDataFile = "{% static 'visualisations_data/20220329/neurons.csv' %}";
-    const connectomesDataFile = "{% static 'visualisations_data/20220329/connectomes.csv' %}";
-  </script>
-  <script src="{% static 'js/libs/d3.min.js' %}"></script>
-  <script src="{% static 'js/visualisations_data_page.js' %}"></script>
-  
 
 </body>
 </html>
