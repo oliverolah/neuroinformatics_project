@@ -1,0 +1,908 @@
+﻿[
+  {
+    "neuronName": "ADAL"
+  },
+  {
+    "neuronName": "ADAR"
+  },
+  {
+    "neuronName": "ADEL"
+  },
+  {
+    "neuronName": "ADER"
+  },
+  {
+    "neuronName": "ADFL"
+  },
+  {
+    "neuronName": "ADFR"
+  },
+  {
+    "neuronName": "ADLL"
+  },
+  {
+    "neuronName": "ADLR"
+  },
+  {
+    "neuronName": "AFDL"
+  },
+  {
+    "neuronName": "AFDR"
+  },
+  {
+    "neuronName": "AIAL"
+  },
+  {
+    "neuronName": "AIAR"
+  },
+  {
+    "neuronName": "AIBL"
+  },
+  {
+    "neuronName": "AIBR"
+  },
+  {
+    "neuronName": "AIML"
+  },
+  {
+    "neuronName": "AIMR"
+  },
+  {
+    "neuronName": "AINL"
+  },
+  {
+    "neuronName": "AINR"
+  },
+  {
+    "neuronName": "AIYL"
+  },
+  {
+    "neuronName": "AIYR"
+  },
+  {
+    "neuronName": "AIZL"
+  },
+  {
+    "neuronName": "AIZR"
+  },
+  {
+    "neuronName": "ALA"
+  },
+  {
+    "neuronName": "ALML"
+  },
+  {
+    "neuronName": "ALMR"
+  },
+  {
+    "neuronName": "ALNL"
+  },
+  {
+    "neuronName": "ALNR"
+  },
+  {
+    "neuronName": "AQR"
+  },
+  {
+    "neuronName": "AS01"
+  },
+  {
+    "neuronName": "AS02"
+  },
+  {
+    "neuronName": "AS03"
+  },
+  {
+    "neuronName": "AS04"
+  },
+  {
+    "neuronName": "AS05"
+  },
+  {
+    "neuronName": "AS06"
+  },
+  {
+    "neuronName": "AS07"
+  },
+  {
+    "neuronName": "AS08"
+  },
+  {
+    "neuronName": "AS09"
+  },
+  {
+    "neuronName": "AS10"
+  },
+  {
+    "neuronName": "AS11"
+  },
+  {
+    "neuronName": "ASEL"
+  },
+  {
+    "neuronName": "ASER"
+  },
+  {
+    "neuronName": "ASGL"
+  },
+  {
+    "neuronName": "ASGR"
+  },
+  {
+    "neuronName": "ASHL"
+  },
+  {
+    "neuronName": "ASHR"
+  },
+  {
+    "neuronName": "ASIL"
+  },
+  {
+    "neuronName": "ASIR"
+  },
+  {
+    "neuronName": "ASJL"
+  },
+  {
+    "neuronName": "ASJR"
+  },
+  {
+    "neuronName": "ASKL"
+  },
+  {
+    "neuronName": "ASKR"
+  },
+  {
+    "neuronName": "AUAL"
+  },
+  {
+    "neuronName": "AUAR"
+  },
+  {
+    "neuronName": "AVAL"
+  },
+  {
+    "neuronName": "AVAR"
+  },
+  {
+    "neuronName": "AVBL"
+  },
+  {
+    "neuronName": "AVBR"
+  },
+  {
+    "neuronName": "AVDL"
+  },
+  {
+    "neuronName": "AVDR"
+  },
+  {
+    "neuronName": "AVEL"
+  },
+  {
+    "neuronName": "AVER"
+  },
+  {
+    "neuronName": "AVFL"
+  },
+  {
+    "neuronName": "AVFR"
+  },
+  {
+    "neuronName": "AVG"
+  },
+  {
+    "neuronName": "AVHL"
+  },
+  {
+    "neuronName": "AVHR"
+  },
+  {
+    "neuronName": "AVJL"
+  },
+  {
+    "neuronName": "AVJR"
+  },
+  {
+    "neuronName": "AVKL"
+  },
+  {
+    "neuronName": "AVKR"
+  },
+  {
+    "neuronName": "AVL"
+  },
+  {
+    "neuronName": "AVM"
+  },
+  {
+    "neuronName": "AWAL"
+  },
+  {
+    "neuronName": "AWAR"
+  },
+  {
+    "neuronName": "AWBL"
+  },
+  {
+    "neuronName": "AWBR"
+  },
+  {
+    "neuronName": "AWCL"
+  },
+  {
+    "neuronName": "AWCR"
+  },
+  {
+    "neuronName": "BAGL"
+  },
+  {
+    "neuronName": "BAGR"
+  },
+  {
+    "neuronName": "BDUL"
+  },
+  {
+    "neuronName": "BDUR"
+  },
+  {
+    "neuronName": "CANL"
+  },
+  {
+    "neuronName": "CANR"
+  },
+  {
+    "neuronName": "CEPDL"
+  },
+  {
+    "neuronName": "CEPDR"
+  },
+  {
+    "neuronName": "CEPVL"
+  },
+  {
+    "neuronName": "CEPVR"
+  },
+  {
+    "neuronName": "DA01"
+  },
+  {
+    "neuronName": "DA02"
+  },
+  {
+    "neuronName": "DA03"
+  },
+  {
+    "neuronName": "DA04"
+  },
+  {
+    "neuronName": "DA05"
+  },
+  {
+    "neuronName": "DA06"
+  },
+  {
+    "neuronName": "DA07"
+  },
+  {
+    "neuronName": "DA08"
+  },
+  {
+    "neuronName": "DA09"
+  },
+  {
+    "neuronName": "DB01"
+  },
+  {
+    "neuronName": "DB02"
+  },
+  {
+    "neuronName": "DB03"
+  },
+  {
+    "neuronName": "DB04"
+  },
+  {
+    "neuronName": "DB05"
+  },
+  {
+    "neuronName": "DB06"
+  },
+  {
+    "neuronName": "DB07"
+  },
+  {
+    "neuronName": "DD01"
+  },
+  {
+    "neuronName": "DD02"
+  },
+  {
+    "neuronName": "DD03"
+  },
+  {
+    "neuronName": "DD04"
+  },
+  {
+    "neuronName": "DD05"
+  },
+  {
+    "neuronName": "DD06"
+  },
+  {
+    "neuronName": "DVA"
+  },
+  {
+    "neuronName": "DVB"
+  },
+  {
+    "neuronName": "DVC"
+  },
+  {
+    "neuronName": "FLPL"
+  },
+  {
+    "neuronName": "FLPR"
+  },
+  {
+    "neuronName": "HSNL"
+  },
+  {
+    "neuronName": "HSNR"
+  },
+  {
+    "neuronName": "I1L"
+  },
+  {
+    "neuronName": "I1R"
+  },
+  {
+    "neuronName": "I2L"
+  },
+  {
+    "neuronName": "I2R"
+  },
+  {
+    "neuronName": "I3"
+  },
+  {
+    "neuronName": "I4"
+  },
+  {
+    "neuronName": "I5"
+  },
+  {
+    "neuronName": "I6"
+  },
+  {
+    "neuronName": "IL1DL"
+  },
+  {
+    "neuronName": "IL1DR"
+  },
+  {
+    "neuronName": "IL1VL"
+  },
+  {
+    "neuronName": "IL1VR"
+  },
+  {
+    "neuronName": "IL1L"
+  },
+  {
+    "neuronName": "IL1R"
+  },
+  {
+    "neuronName": "IL2DL"
+  },
+  {
+    "neuronName": "IL2DR"
+  },
+  {
+    "neuronName": "IL2VL"
+  },
+  {
+    "neuronName": "IL2VR"
+  },
+  {
+    "neuronName": "IL2L"
+  },
+  {
+    "neuronName": "IL2R"
+  },
+  {
+    "neuronName": "LUAL"
+  },
+  {
+    "neuronName": "LUAR"
+  },
+  {
+    "neuronName": "M1"
+  },
+  {
+    "neuronName": "M2L"
+  },
+  {
+    "neuronName": "M2R"
+  },
+  {
+    "neuronName": "M3L"
+  },
+  {
+    "neuronName": "M3R"
+  },
+  {
+    "neuronName": "M4"
+  },
+  {
+    "neuronName": "M5"
+  },
+  {
+    "neuronName": "MCL"
+  },
+  {
+    "neuronName": "MCR"
+  },
+  {
+    "neuronName": "MI"
+  },
+  {
+    "neuronName": "NSML"
+  },
+  {
+    "neuronName": "NSMR"
+  },
+  {
+    "neuronName": "OLLL"
+  },
+  {
+    "neuronName": "OLLR"
+  },
+  {
+    "neuronName": "OLQDL"
+  },
+  {
+    "neuronName": "OLQDR"
+  },
+  {
+    "neuronName": "OLQVL"
+  },
+  {
+    "neuronName": "OLQVR"
+  },
+  {
+    "neuronName": "PDA"
+  },
+  {
+    "neuronName": "PDB"
+  },
+  {
+    "neuronName": "PDEL"
+  },
+  {
+    "neuronName": "PDER"
+  },
+  {
+    "neuronName": "PHAL"
+  },
+  {
+    "neuronName": "PHAR"
+  },
+  {
+    "neuronName": "PHBL"
+  },
+  {
+    "neuronName": "PHBR"
+  },
+  {
+    "neuronName": "PHCL"
+  },
+  {
+    "neuronName": "PHCR"
+  },
+  {
+    "neuronName": "PLML"
+  },
+  {
+    "neuronName": "PLMR"
+  },
+  {
+    "neuronName": "PLNL"
+  },
+  {
+    "neuronName": "PLNR"
+  },
+  {
+    "neuronName": "PQR"
+  },
+  {
+    "neuronName": "PVCL"
+  },
+  {
+    "neuronName": "PVCR"
+  },
+  {
+    "neuronName": "PVDL"
+  },
+  {
+    "neuronName": "PVDR"
+  },
+  {
+    "neuronName": "PVM"
+  },
+  {
+    "neuronName": "PVNL"
+  },
+  {
+    "neuronName": "PVNR"
+  },
+  {
+    "neuronName": "PVPL"
+  },
+  {
+    "neuronName": "PVPR"
+  },
+  {
+    "neuronName": "PVQL"
+  },
+  {
+    "neuronName": "PVQR"
+  },
+  {
+    "neuronName": "PVR"
+  },
+  {
+    "neuronName": "PVT"
+  },
+  {
+    "neuronName": "PVWL"
+  },
+  {
+    "neuronName": "PVWR"
+  },
+  {
+    "neuronName": "RIAL"
+  },
+  {
+    "neuronName": "RIAR"
+  },
+  {
+    "neuronName": "RIBL"
+  },
+  {
+    "neuronName": "RIBR"
+  },
+  {
+    "neuronName": "RICL"
+  },
+  {
+    "neuronName": "RICR"
+  },
+  {
+    "neuronName": "RID"
+  },
+  {
+    "neuronName": "RIFL"
+  },
+  {
+    "neuronName": "RIFR"
+  },
+  {
+    "neuronName": "RIGL"
+  },
+  {
+    "neuronName": "RIGR"
+  },
+  {
+    "neuronName": "RIH"
+  },
+  {
+    "neuronName": "RIML"
+  },
+  {
+    "neuronName": "RIMR"
+  },
+  {
+    "neuronName": "RIPL"
+  },
+  {
+    "neuronName": "RIPR"
+  },
+  {
+    "neuronName": "RIR"
+  },
+  {
+    "neuronName": "RIS"
+  },
+  {
+    "neuronName": "RIVL"
+  },
+  {
+    "neuronName": "RIVR"
+  },
+  {
+    "neuronName": "RMDDL"
+  },
+  {
+    "neuronName": "RMDDR"
+  },
+  {
+    "neuronName": "RMDL"
+  },
+  {
+    "neuronName": "RMDR"
+  },
+  {
+    "neuronName": "RMDVL"
+  },
+  {
+    "neuronName": "RMDVR"
+  },
+  {
+    "neuronName": "RMED"
+  },
+  {
+    "neuronName": "RMEV"
+  },
+  {
+    "neuronName": "RMEL"
+  },
+  {
+    "neuronName": "RMER"
+  },
+  {
+    "neuronName": "RMFL"
+  },
+  {
+    "neuronName": "RMFR"
+  },
+  {
+    "neuronName": "RMGL"
+  },
+  {
+    "neuronName": "RMGR"
+  },
+  {
+    "neuronName": "RMHL"
+  },
+  {
+    "neuronName": "RMHR"
+  },
+  {
+    "neuronName": "SAADL"
+  },
+  {
+    "neuronName": "SAADR"
+  },
+  {
+    "neuronName": "SAAVL"
+  },
+  {
+    "neuronName": "SAAVR"
+  },
+  {
+    "neuronName": "SABD"
+  },
+  {
+    "neuronName": "SABVL"
+  },
+  {
+    "neuronName": "SABVR"
+  },
+  {
+    "neuronName": "SDQL"
+  },
+  {
+    "neuronName": "SDQR"
+  },
+  {
+    "neuronName": "SIADL"
+  },
+  {
+    "neuronName": "SIADR"
+  },
+  {
+    "neuronName": "SIAVL"
+  },
+  {
+    "neuronName": "SIAVR"
+  },
+  {
+    "neuronName": "SIBDL"
+  },
+  {
+    "neuronName": "SIBDR"
+  },
+  {
+    "neuronName": "SIBVL"
+  },
+  {
+    "neuronName": "SIBVR"
+  },
+  {
+    "neuronName": "SMBDL"
+  },
+  {
+    "neuronName": "SMBDR"
+  },
+  {
+    "neuronName": "SMBVL"
+  },
+  {
+    "neuronName": "SMBVR"
+  },
+  {
+    "neuronName": "SMDDL"
+  },
+  {
+    "neuronName": "SMDDR"
+  },
+  {
+    "neuronName": "SMDVL"
+  },
+  {
+    "neuronName": "SMDVR"
+  },
+  {
+    "neuronName": "URADL"
+  },
+  {
+    "neuronName": "URADR"
+  },
+  {
+    "neuronName": "URAVL"
+  },
+  {
+    "neuronName": "URAVR"
+  },
+  {
+    "neuronName": "URBL"
+  },
+  {
+    "neuronName": "URBR"
+  },
+  {
+    "neuronName": "URXL"
+  },
+  {
+    "neuronName": "URXR"
+  },
+  {
+    "neuronName": "URYDL"
+  },
+  {
+    "neuronName": "URYDR"
+  },
+  {
+    "neuronName": "URYVL"
+  },
+  {
+    "neuronName": "URYVR"
+  },
+  {
+    "neuronName": "VA01"
+  },
+  {
+    "neuronName": "VA02"
+  },
+  {
+    "neuronName": "VA03"
+  },
+  {
+    "neuronName": "VA04"
+  },
+  {
+    "neuronName": "VA05"
+  },
+  {
+    "neuronName": "VA06"
+  },
+  {
+    "neuronName": "VA07"
+  },
+  {
+    "neuronName": "VA08"
+  },
+  {
+    "neuronName": "VA09"
+  },
+  {
+    "neuronName": "VA10"
+  },
+  {
+    "neuronName": "VA11"
+  },
+  {
+    "neuronName": "VA12"
+  },
+  {
+    "neuronName": "VB01"
+  },
+  {
+    "neuronName": "VB02"
+  },
+  {
+    "neuronName": "VB03"
+  },
+  {
+    "neuronName": "VB04"
+  },
+  {
+    "neuronName": "VB05"
+  },
+  {
+    "neuronName": "VB06"
+  },
+  {
+    "neuronName": "VB07"
+  },
+  {
+    "neuronName": "VB08"
+  },
+  {
+    "neuronName": "VB09"
+  },
+  {
+    "neuronName": "VB10"
+  },
+  {
+    "neuronName": "VB11"
+  },
+  {
+    "neuronName": "VC01"
+  },
+  {
+    "neuronName": "VC02"
+  },
+  {
+    "neuronName": "VC03"
+  },
+  {
+    "neuronName": "VC04"
+  },
+  {
+    "neuronName": "VC05"
+  },
+  {
+    "neuronName": "VC06"
+  },
+  {
+    "neuronName": "VD01"
+  },
+  {
+    "neuronName": "VD02"
+  },
+  {
+    "neuronName": "VD03"
+  },
+  {
+    "neuronName": "VD04"
+  },
+  {
+    "neuronName": "VD05"
+  },
+  {
+    "neuronName": "VD06"
+  },
+  {
+    "neuronName": "VD07"
+  },
+  {
+    "neuronName": "VD08"
+  },
+  {
+    "neuronName": "VD09"
+  },
+  {
+    "neuronName": "VD10"
+  },
+  {
+    "neuronName": "VD11"
+  },
+  {
+    "neuronName": "VD12"
+  },
+  {
+    "neuronName": "VD13"
+  }
+]

@@ -1,0 +1,10 @@
+/* #data-vis-wrapper {
+  padding: 0 auto;
+  margin-right: 0;
+  margin-left: 0;
+} */
+
+#data-vis-container {
+  margin: 0 auto;
+  /* background: #d4d4d4; */
+}
