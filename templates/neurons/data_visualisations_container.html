@@ -33,7 +33,7 @@
           <div class="flex justify-between bg-zinc-200 py-2 px-2 rounded-t-md">
             <h3 class="text-lg font-medium">Neuron name</h3>
           </div>
-          <div class="px-2 overflow-y-auto overscroll-none h-48 divide-y divide-zinc-300">
+          <div id="neurons-checkbox-list" class="px-2 overflow-y-auto overscroll-none h-56 divide-y divide-zinc-300">
             <div class="flex justify-between py-3">
               <h3>Neuron 1</h3>
               <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
@@ -65,11 +65,12 @@
 
       <!-- Visualisation container w=610 h=700 -->
       <div id="data-vis-wrapper" class="bg-zinc-100 rounded-md shadow-xl p-2 w-5/6 mt-5 mx-auto lg:mt-0 lg:rounded-r-none">
-        <svg id="data-vis-container" width="1000" height="700" class="rounded-md border border-zinc-300"></svg>
+        <svg id="data-vis-container" width="600" height="700" class="rounded-md border border-zinc-300"></svg>
       </div>
   </div>
   
   <!-- Page JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     const dataFile = "{% static 'visualisations_data/20220329/json/data.json' %}";
   </script>

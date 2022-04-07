@@ -5,8 +5,6 @@ import {
   forceCenter,
 } from 'https://cdn.skypack.dev/d3-force@3';
 
-
-
 let svg = d3.select('#data-vis-container');
 
 const width = +svg.attr('width');
@@ -19,15 +17,39 @@ var nodeColor = d3.scaleOrdinal(d3.schemeSet3);
 var linkColor = d3.scaleOrdinal(d3.schemeCategory10);
 
 d3.json(dataFile).then(function (data) {
-  // if (error) throw error;
 
   const simulation = forceSimulation()
     .nodes(data.nodes)
     .force('charge', forceManyBody().strength(-40))
     .force('link', forceLink(data.links).id((d) => d.id))
     .force('center', forceCenter(centerX, centerY))
-    .force('forceX', d3.forceX(-1))  // keeps the unconnected nodes together with the rest
-    .force('forceY', d3.forceY(-1)); // keeps the unconnected nodes together with the rest
+    .force('forceX', d3.forceX(-1))  // keeps the unconnected nodes together with the rest on a screen
+    .force('forceY', d3.forceY(-1))  // keeps the unconnected nodes together with the rest on a screen
+    .force('collide', d3.forceCollide(10));
+  
+  // node tooltip
+  const nodeTooltip = d3
+    .select('#data-vis-wrapper')
+    .append('div')
+    .style('visibility', 'hidden')
+    .attr('class', 'tooltip');
+
+  const tooltipIn = function (event, d) {
+    return nodeTooltip
+      .html(
+        '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' + 
+        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>')
+      .style('visibility', 'visible') 
+      .style('top', event.pageY + 'px') 
+      .style('left', event.pageX + 'px')
+  }
+
+  const tooltipOut = function() {
+    return nodeTooltip
+      .transition()
+      .duration(50)
+      .style('visibility', 'hidden')
+  }
 
   const link = svg
     .selectAll('line')
@@ -35,7 +57,7 @@ d3.json(dataFile).then(function (data) {
     .enter()
     .append('line')
     .attr('opacity', 0.3)
-    .style('stroke', function(d){ return linkColor(d.edgeTypeName) })
+    .style('stroke', function (d) { return linkColor(d.edgeTypeName); })
     .attr('stroke-width', function(d) { return Math.sqrt(d.numOfEdges); });
   
   const node = svg
@@ -45,11 +67,13 @@ d3.json(dataFile).then(function (data) {
     .enter()
     .append('circle')
     .attr('r', 5)
-    .style("stroke", "black")
-    .style("stroke-width", .5)
-    .attr("fill", function (d) { return nodeColor(d.className); })
+    .style('stroke', 'black')
+    .style('stroke-width', .5)
+    .attr('fill', function (d) { return nodeColor(d.className); })
+    .on('mouseover', tooltipIn)
+    .on('mouseout', tooltipOut)
     .call(nodeDragging(simulation));
-
+  
   simulation.on('tick', ticked);
 
   function ticked() {
@@ -69,13 +93,16 @@ d3.json(dataFile).then(function (data) {
   svg.call(d3.zoom()
       .extent([[0, 0], [width, height]])
       .scaleExtent([0, 8])
-      .on("zoom", zoomed));
+      .on('zoom', zoomed));
 
   function zoomed({transform}) {
-    node.attr("transform", transform);
-    link.attr("transform", transform);
+    node.attr('transform', transform);
+    link.attr('transform', transform);
   }
-});
+
+  return svg.canvas;
+
+}).catch((err) => alert(err.message));
 
 // Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/force-directed-graph
 // node dragging 
@@ -98,7 +125,7 @@ function nodeDragging(simulation) {
   }
   
   return d3.drag()
-    .on("start", dragStarted)
-    .on("drag", dragged)
-    .on("end", dragEnded);
+    .on('start', dragStarted)
+    .on('drag', dragged)
+    .on('end', dragEnded);
 }
