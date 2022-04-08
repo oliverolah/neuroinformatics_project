@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Data Visualisations</title>
   <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/visualisations_page.css' %}">
   {% tailwind_css %}
 </head>
 <body>
@@ -32,7 +33,7 @@
           <div class="flex justify-between bg-zinc-200 py-2 px-2 rounded-t-md">
             <h3 class="text-lg font-medium">Neuron name</h3>
           </div>
-          <div class="px-2 overflow-y-auto overscroll-none h-48 divide-y divide-zinc-300">
+          <div id="neurons-checkbox-list" class="px-2 overflow-y-auto overscroll-none h-56 divide-y divide-zinc-300">
             <div class="flex justify-between py-3">
               <h3>Neuron 1</h3>
               <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
@@ -62,21 +63,16 @@
       </div>
     </div>
 
-    <!-- Visualisation container -->
-    <div class="bg-zinc-200 rounded-md shadow-xl p-2 w-5/6 mx-auto mt-5 lg:mt-0 lg:rounded-r-none">
-      <svg id="data-vis-container" width="100%"  height="700px" class="bg-zinc-100 rounded-md border border-zinc-300"></svg>
-    </div>
-
+      <!-- Visualisation container w=610 h=700 -->
+      <div id="data-vis-wrapper" class="bg-zinc-100 rounded-md shadow-xl p-2 w-5/6 mt-5 mx-auto lg:mt-0 lg:rounded-r-none">
+        <svg id="data-vis-container" width="600" height="700" class="rounded-md border border-zinc-300"></svg>
+      </div>
   </div>
   
   <!-- Page JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script type="text/javascript">
-    const edgesDataFile = "{% static 'visualisations_data/20220329/csv/edges.csv' %}";
-    const classesDataFile = "{% static 'visualisations_data/20220329/csv/classes.csv' %}";
-    const neuronsDataFile = "{% static 'visualisations_data/20220329/csv/neurons.csv' %}";
-    const connectomesDataFile = "{% static 'visualisations_data/20220329/csv/connectomes.csv' %}";
-    // const nodesDataFile = "{% static 'visualisations_data/20220329/json/nodes.json' %}";
-    // const linksDataFile = "{% static 'visualisations_data/20220329/json/links.json' %}";
+    const dataFile = "{% static 'visualisations_data/20220329/json/data.json' %}";
   </script>
   <script src="{% static 'js/libs/d3.min.js' %}"></script>
   <script type ="module" src="{% static 'js/visualisations_data_page.js' %}"></script>
