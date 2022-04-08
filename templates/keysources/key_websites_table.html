@@ -1,0 +1,22 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Websites Data Table</title>
+  {% tailwind_css %}
+</head>
+<body>
+  
+  {% for website in websites %}
+    <div>
+      <h3 class="text-xl font-semibold text-cardiffMetSecondary lg:text-2xl">{{ website.websiteName }}</h3>
+      <span class="font-semibold">Website URL: </span><a class="hover:underline cursor-pointer" href="{{ website.websiteUrl }}">{{ website.websiteUrl }}</a>
+    </div>
+  {% endfor %}
+
+</body>
+</html>

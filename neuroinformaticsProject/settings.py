@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'submitdata',
     'contactus',
     'aboutcontent',
+    'keysources',
     
     # 3rd party apps
     'tailwind',
@@ -108,6 +109,14 @@ DATABASES = {
         'HOST': config('DB_HOST_4'),
         'PORT': config('DB_PORT_4')
     },
+    'keysources_db': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': config('DB_NAME_5'),
+        'USER': config('DB_USER_5'),
+        'PASSWORD': config('DB_PASSWORD_5'),
+        'HOST': config('DB_HOST_5'),
+        'PORT': config('DB_PORT_5')
+    },
 }
 
 DATABASE_ROUTERS = [
@@ -115,6 +124,7 @@ DATABASE_ROUTERS = [
     'routers.db_routers.NeuronsRouter',
     'routers.db_routers.SubmitDataRouter',
     'routers.db_routers.ContactUsDataRouter',
+    'routers.db_routers.KeySourcesDataRouter',
 ]
 
 

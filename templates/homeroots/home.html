@@ -38,21 +38,25 @@
          <!-- About -->
          <div class="bg-zinc-100 py-16 rounded-md shadow-xl px-5 sm:px-10 md:px-20 lg:px-14 lg:w-2/4 xl:py-24">
             <h1 class="text-3xl font-semibold pb-7 xl:text-5xl">The Project</h1>
-            <p class="text-sm leading-4 pb-7 md:text-base xl:text-lg">This web application aims to aid  bioengineering research aiming to understand human being's brain functioning by investigating network neuroscience and connectomics of its nervous systems.</p>
+            <p class="leading-6 lg:text-lg">This web application aims to aid  bioengineering research aiming to understand human being's brain functioning by investigating network neuroscience and connectomics of its nervous systems.</p>
+            <div class="mt-7">
                <a href="{% url 'aboutpage' %}" class="flex gap-1">
                   <span class="font-medium text-cardiffMetSecondary text-sm md:text-base xl:text-lg hover:font-bold">Read more</span> 
                   <img class="h-5 my-auto" src='{% static "icons/right-arrow.png" %}' alt="Right Arrow">
                </a>
+            </div>
          </div>
       
          <!-- Data Submission -->
          <div class="bg-zinc-100 py-16 rounded-md shadow-xl px-5 sm:px-10 md:px-20 lg:px-14 lg:w-2/4 xl:py-24">
             <h1 class="text-3xl font-semibold pb-7 xl:text-5xl">Submit data</h1>
-            <p class="text-sm leading-4 pb-7 md:text-base xl:text-lg">To improve the research we believe that our users can contribute as well. If you have data that can contribute to the CardiffMet data repository, please, do not hesitate and submit your own data for review and even their potential implementation.</p>
-               <a href="{% url 'submitdatapage' %}" class="flex gap-1">
+            <p class="leading-6 lg:text-lg">To improve the research we believe that our users can contribute as well. If you have data that can contribute to the CardiffMet data repository, please, do not hesitate and submit your own data for review and even their potential implementation.</p>
+            <div class="mt-7">
+               <a href="{% url 'submitdatapage' %}" class="flex gap-1 relative">
                   <span class="font-medium text-cardiffMetSecondary text-sm md:text-base xl:text-lg hover:font-bold">Submit data</span>
                   <img class="h-5 my-auto" src='{% static "icons/right-arrow.png" %}' alt="Right Arrow">
                </a>
+            </div>
          </div>
       </div>
 
