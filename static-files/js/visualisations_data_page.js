@@ -14,7 +14,9 @@ const centerX = width / 2;
 const centerY = height / 2;
 
 var nodeColor = d3.scaleOrdinal(d3.schemeSet3);
-var linkColor = d3.scaleOrdinal(d3.schemeCategory10);
+var gapLinkColorOrange = 'rgba(255,127,1,255)'; // color for GAP-type links
+var synLinkColorBlue = 'rgba(23,118,182,255)'; // color for SYN-type links
+
 
 d3.json(dataFile).then(function (data) {
 
@@ -38,7 +40,8 @@ d3.json(dataFile).then(function (data) {
     return nodeTooltip
       .html(
         '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' + 
-        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>')
+        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>'
+      )
       .style('visibility', 'visible') 
       .style('top', event.pageY + 'px') 
       .style('left', event.pageX + 'px')
@@ -57,8 +60,14 @@ d3.json(dataFile).then(function (data) {
     .enter()
     .append('line')
     .attr('opacity', 0.3)
-    .style('stroke', function (d) { return linkColor(d.edgeTypeName); })
-    .attr('stroke-width', function(d) { return Math.sqrt(d.numOfEdges); });
+    .style('stroke', function (d) {
+      if (d.edgeTypeName === 'syn') {
+        return synLinkColorBlue; // syn link
+      } else {
+        return gapLinkColorOrange; // gap link
+      }
+    })
+    .attr('stroke-width', function (d) { return Math.sqrt(d.numOfEdges); });
   
   const node = svg
     .attr('class', 'nodes')
@@ -86,7 +95,7 @@ d3.json(dataFile).then(function (data) {
     node
       .attr('cx', (nd) => nd.x) // nd => node
       .attr('cy', (nd) => nd.y);
-  }
+  };
 
   // Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/zoom
   // visualisation zooming
@@ -98,7 +107,7 @@ d3.json(dataFile).then(function (data) {
   function zoomed({transform}) {
     node.attr('transform', transform);
     link.attr('transform', transform);
-  }
+  };
 
   return svg.canvas;
 
@@ -128,4 +137,4 @@ function nodeDragging(simulation) {
     .on('start', dragStarted)
     .on('drag', dragged)
     .on('end', dragEnded);
-}
+};
