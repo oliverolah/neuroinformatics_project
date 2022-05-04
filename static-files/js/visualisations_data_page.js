@@ -10,8 +10,13 @@ let svg = d3.select('#data-vis-container');
 const width = +svg.attr('width');
 const height = +svg.attr('height');
 
+svg.attr("viewBox", "0 0 " + width + " " + height )
+  .attr("preserveAspectRatio", "xMinYMin");
+
 const centerX = width / 2;
 const centerY = height / 2;
+
+const nodeRadius = 6;
 
 var nodeColor = d3.scaleOrdinal(d3.schemeSet3);
 var gapLinkColorOrange = 'rgba(255,127,1,255)'; // color for GAP-type links
@@ -75,7 +80,7 @@ d3.json(dataFile).then(function (data) {
     .data(data.nodes)
     .enter()
     .append('circle')
-    .attr('r', 5)
+    .attr('r', nodeRadius)
     .style('stroke', 'black')
     .style('stroke-width', .5)
     .attr('fill', function (d) { return nodeColor(d.className); })
@@ -86,28 +91,32 @@ d3.json(dataFile).then(function (data) {
   simulation.on('tick', ticked);
 
   function ticked() {
+
+    node
+      // .attr('cx', (nd) => nd.x) // nd => node
+      // .attr('cy', (nd) => nd.y);
+      // this two lines of code below keep all nodes within the boundaries of the vis container even when dragged
+      .attr('cx', function(nd) { return nd.x = Math.max(nodeRadius, Math.min(width - nodeRadius, nd.x)); })
+      .attr('cy', function(nd) { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); }); 
+  
     link
       .attr('x1', (lk) => lk.source.x) // lk => link
       .attr('y1', (lk) => lk.source.y)
       .attr('x2', (lk) => lk.target.x)
       .attr('y2', (lk) => lk.target.y);
-
-    node
-      .attr('cx', (nd) => nd.x) // nd => node
-      .attr('cy', (nd) => nd.y);
   };
 
   // Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/zoom
   // visualisation zooming
-  svg.call(d3.zoom()
-      .extent([[0, 0], [width, height]])
-      .scaleExtent([0, 8])
-      .on('zoom', zoomed));
+  // svg.call(d3.zoom()
+  //     .extent([[0, 0], [width, height]])
+  //     .scaleExtent([0, 8])
+  //     .on('zoom', zoomed));
 
-  function zoomed({transform}) {
-    node.attr('transform', transform);
-    link.attr('transform', transform);
-  };
+  // function zoomed({transform}) {
+  //   node.attr('transform', transform);
+  //   link.attr('transform', transform);
+  // };
 
   return svg.canvas;
 
