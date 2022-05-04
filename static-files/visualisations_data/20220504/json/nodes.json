@@ -1,0 +1,1512 @@
+﻿[
+  {
+    "id": "ADAL",
+    "className": "ADA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "ADAR",
+    "className": "ADA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "ADEL",
+    "className": "ADE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ADER",
+    "className": "ADE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ADFL",
+    "className": "ADF",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ADFR",
+    "className": "ADF",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ADLL",
+    "className": "ADL",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ADLR",
+    "className": "ADL",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AFDL",
+    "className": "AFD",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AFDR",
+    "className": "AFD",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AIAL",
+    "className": "AIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIAR",
+    "className": "AIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIBL",
+    "className": "AIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIBR",
+    "className": "AIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIML",
+    "className": "AIM",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIMR",
+    "className": "AIM",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AINL",
+    "className": "AIN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AINR",
+    "className": "AIN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIYL",
+    "className": "AIY",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIYR",
+    "className": "AIY",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIZL",
+    "className": "AIZ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AIZR",
+    "className": "AIZ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "ALA",
+    "className": "ALA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "ALML",
+    "className": "ALM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ALMR",
+    "className": "ALM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ALNL",
+    "className": "ALN",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ALNR",
+    "className": "ALN",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AQR",
+    "className": "AQR",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AS01",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS02",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS03",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS04",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS05",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS06",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS07",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS08",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS09",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS10",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "AS11",
+    "className": "AS",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "ASEL",
+    "className": "ASE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASER",
+    "className": "ASE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASGL",
+    "className": "ASG",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASGR",
+    "className": "ASG",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASHL",
+    "className": "ASH",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASHR",
+    "className": "ASH",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASIL",
+    "className": "ASI",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASIR",
+    "className": "ASI",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASJL",
+    "className": "ASJ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASJR",
+    "className": "ASJ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASKL",
+    "className": "ASK",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "ASKR",
+    "className": "ASK",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AUAL",
+    "className": "AUA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AUAR",
+    "className": "AUA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AVAL",
+    "className": "AVA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVAR",
+    "className": "AVA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVBL",
+    "className": "AVB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVBR",
+    "className": "AVB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVDL",
+    "className": "AVD",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVDR",
+    "className": "AVD",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVEL",
+    "className": "AVE",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVER",
+    "className": "AVE",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVFL",
+    "className": "AVF",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVFR",
+    "className": "AVF",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVG",
+    "className": "AVG",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVHL",
+    "className": "AVH",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVHR",
+    "className": "AVH",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVJL",
+    "className": "AVJ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVJR",
+    "className": "AVJ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVKL",
+    "className": "AVK",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVKR",
+    "className": "AVK",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVL",
+    "className": "AVL",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "AVM",
+    "className": "AVM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWAL",
+    "className": "AWA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWAR",
+    "className": "AWA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWBL",
+    "className": "AWB",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWBR",
+    "className": "AWB",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWCL",
+    "className": "AWC",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "AWCR",
+    "className": "AWC",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "BAGL",
+    "className": "BAG",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "BAGR",
+    "className": "BAG",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "BDUL",
+    "className": "BDU",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "BDUR",
+    "className": "BDU",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "CANL",
+    "className": "CAN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "CANR",
+    "className": "CAN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "CEPDL",
+    "className": "CEP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "CEPDR",
+    "className": "CEP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "CEPVL",
+    "className": "CEP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "CEPVR",
+    "className": "CEP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "DA01",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA02",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA03",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA04",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA05",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA06",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA07",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA08",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DA09",
+    "className": "DA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB01",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB02",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB03",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB04",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB05",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB06",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DB07",
+    "className": "DB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD01",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD02",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD03",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD04",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD05",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DD06",
+    "className": "DD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "DVA",
+    "className": "DVA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "DVB",
+    "className": "DVB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "DVC",
+    "className": "DVC",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "FLPL",
+    "className": "FLP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "FLPR",
+    "className": "FLP",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "HSNL",
+    "className": "HSN",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "HSNR",
+    "className": "HSN",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "I1L",
+    "className": "I1",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I1R",
+    "className": "I1",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I2L",
+    "className": "I2",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I2R",
+    "className": "I2",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I3",
+    "className": "I3",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I4",
+    "className": "I4",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I5",
+    "className": "I5",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "I6",
+    "className": "I6",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "IL1DL",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL1DR",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL1VL",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL1VR",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL1L",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL1R",
+    "className": "IL1",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2DL",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2DR",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2VL",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2VR",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2L",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "IL2R",
+    "className": "IL2",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "LUAL",
+    "className": "LUA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "LUAR",
+    "className": "LUA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "M1",
+    "className": "M1",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M2L",
+    "className": "M2",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M2R",
+    "className": "M2",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M3L",
+    "className": "M3",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M3R",
+    "className": "M3",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M4",
+    "className": "M4",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "M5",
+    "className": "M5",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "MCL",
+    "className": "MC",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "MCR",
+    "className": "MC",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "MI",
+    "className": "MI",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "NSML",
+    "className": "NSM",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "NSMR",
+    "className": "NSM",
+    "neuronTypeName": "PHARYNX"
+  },
+  {
+    "id": "OLLL",
+    "className": "OLL",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "OLLR",
+    "className": "OLL",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "OLQDL",
+    "className": "OLQ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "OLQDR",
+    "className": "OLQ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "OLQVL",
+    "className": "OLQ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "OLQVR",
+    "className": "OLQ",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PDA",
+    "className": "PDA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "PDB",
+    "className": "PDB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "PDEL",
+    "className": "PDE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PDER",
+    "className": "PDE",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHAL",
+    "className": "PHA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHAR",
+    "className": "PHA",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHBL",
+    "className": "PHB",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHBR",
+    "className": "PHB",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHCL",
+    "className": "PHC",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PHCR",
+    "className": "PHC",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PLML",
+    "className": "PLM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PLMR",
+    "className": "PLM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PLNL",
+    "className": "PLN",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PLNR",
+    "className": "PLN",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PQR",
+    "className": "PQR",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PVCL",
+    "className": "PVC",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVCR",
+    "className": "PVC",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVDL",
+    "className": "PVD",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PVDR",
+    "className": "PVD",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PVM",
+    "className": "PVM",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "PVNL",
+    "className": "PVN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVNR",
+    "className": "PVN",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVPL",
+    "className": "PVP",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVPR",
+    "className": "PVP",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVQL",
+    "className": "PVQ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVQR",
+    "className": "PVQ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVR",
+    "className": "PVR",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVT",
+    "className": "PVT",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVWL",
+    "className": "PVW",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "PVWR",
+    "className": "PVW",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIAL",
+    "className": "RIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIAR",
+    "className": "RIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIBL",
+    "className": "RIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIBR",
+    "className": "RIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RICL",
+    "className": "RIC",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RICR",
+    "className": "RIC",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RID",
+    "className": "RID",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIFL",
+    "className": "RIF",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIFR",
+    "className": "RIF",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIGL",
+    "className": "RIG",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIGR",
+    "className": "RIG",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIH",
+    "className": "RIH",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIML",
+    "className": "RIM",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RIMR",
+    "className": "RIM",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RIPL",
+    "className": "RIP",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIPR",
+    "className": "RIP",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIR",
+    "className": "RIR",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIS",
+    "className": "RIS",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RIVL",
+    "className": "RIV",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RIVR",
+    "className": "RIV",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDDL",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDDR",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDL",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDR",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDVL",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMDVR",
+    "className": "RMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMED",
+    "className": "RME",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMEV",
+    "className": "RME",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMEL",
+    "className": "RME",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMER",
+    "className": "RME",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMFL",
+    "className": "RMF",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMFR",
+    "className": "RMF",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMGL",
+    "className": "RMG",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RMGR",
+    "className": "RMG",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "RMHL",
+    "className": "RMH",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "RMHR",
+    "className": "RMH",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SAADL",
+    "className": "SAA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SAADR",
+    "className": "SAA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SAAVL",
+    "className": "SAA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SAAVR",
+    "className": "SAA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SABD",
+    "className": "SAB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SABVL",
+    "className": "SAB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SABVR",
+    "className": "SAB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SDQL",
+    "className": "SDQ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SDQR",
+    "className": "SDQ",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIADL",
+    "className": "SIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIADR",
+    "className": "SIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIAVL",
+    "className": "SIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIAVR",
+    "className": "SIA",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIBDL",
+    "className": "SIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIBDR",
+    "className": "SIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIBVL",
+    "className": "SIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SIBVR",
+    "className": "SIB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "SMBDL",
+    "className": "SMB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMBDR",
+    "className": "SMB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMBVL",
+    "className": "SMB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMBVR",
+    "className": "SMB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMDDL",
+    "className": "SMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMDDR",
+    "className": "SMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMDVL",
+    "className": "SMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "SMDVR",
+    "className": "SMD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "URADL",
+    "className": "URA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "URADR",
+    "className": "URA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "URAVL",
+    "className": "URA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "URAVR",
+    "className": "URA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "URBL",
+    "className": "URB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "URBR",
+    "className": "URB",
+    "neuronTypeName": "INTERNEURONS"
+  },
+  {
+    "id": "URXL",
+    "className": "URX",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "URXR",
+    "className": "URX",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "URYDL",
+    "className": "URY",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "URYDR",
+    "className": "URY",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "URYVL",
+    "className": "URY",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "URYVR",
+    "className": "URY",
+    "neuronTypeName": "SENSORY_NEURONS"
+  },
+  {
+    "id": "VA01",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA02",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA03",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA04",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA05",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA06",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA07",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA08",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA09",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA10",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA11",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VA12",
+    "className": "VA",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB01",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB02",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB03",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB04",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB05",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB06",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB07",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB08",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB09",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB10",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VB11",
+    "className": "VB",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC01",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC02",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC03",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC04",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC05",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VC06",
+    "className": "VC",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD01",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD02",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD03",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD04",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD05",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD06",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD07",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD08",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD09",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD10",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD11",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD12",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  },
+  {
+    "id": "VD13",
+    "className": "VD",
+    "neuronTypeName": "MOTOR_NEURONS"
+  }
+]
