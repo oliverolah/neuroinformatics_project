@@ -18,6 +18,7 @@ class Neuron(models.Model):
    neuronId = models.AutoField(primary_key=True, verbose_name="Neuron Id")
    neuronName = models.CharField(max_length=10, unique=True, verbose_name="Neuron Name")
    className = models.ForeignKey("NeuronClass", to_field="className", on_delete=models.SET_NULL, null=True, blank=True, db_column="className", verbose_name="Class Name")
+   neuronTypeName = models.ForeignKey("NeuronType", to_field="neuronTypeName", on_delete=models.SET_NULL, null=True, blank=True, db_column="neuronTypeName", verbose_name="Neuron Type Name")
    
    class Meta:
       verbose_name="Neuron"
@@ -25,6 +26,18 @@ class Neuron(models.Model):
 
    def __str__(self):
       return self.neuronName
+   
+
+class NeuronType(models.Model):
+   neuronTypeId = models.AutoField(primary_key=True, verbose_name="Neuron Type Id")
+   neuronTypeName = models.CharField(max_length=100, unique=True, verbose_name="Neuron Type Name")
+   
+   class Meta:
+      verbose_name="Neuron Type"
+      verbose_name_plural="Neuron Types"
+
+   def __str__(self):
+      return self.neuronTypeName
 
 
 class Edge(models.Model):
