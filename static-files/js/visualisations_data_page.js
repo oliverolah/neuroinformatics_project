@@ -7,21 +7,21 @@ import {
 
 let svg = d3.select('#data-vis-container');
 
-const width = +svg.attr('width');
-const height = +svg.attr('height');
+const width = +svg.attr('width'),
+  height = +svg.attr('height');
 
 svg.attr("viewBox", "0 0 " + width + " " + height )
   .attr("preserveAspectRatio", "xMinYMin");
 
-const centerX = width / 2;
-const centerY = height / 2;
+const centerX = width / 2,
+  centerY = height / 2;
 
-const nodeRadius = 6;
+const nodeRadius = 5;
 
-var nodeColor = d3.scaleOrdinal(d3.schemeSet3);
-var gapLinkColorOrange = 'rgba(255,127,1,255)'; // color for GAP-type links
-var synLinkColorBlue = 'rgba(23,118,182,255)'; // color for SYN-type links
-
+// const nodeColor = d3.scaleOrdinal(d3.schemeSet3);
+const nodeColor = 'rgb(201,234,255)',
+  gapLinkColorOrange = 'rgba(255,127,1,255)', // color for GAP-type links
+  synLinkColorBlue = 'rgba(23,118,182,255)'; // color for SYN-type links
 
 d3.json(dataFile).then(function (data) {
 
@@ -45,7 +45,8 @@ d3.json(dataFile).then(function (data) {
     return nodeTooltip
       .html(
         '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' + 
-        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>'
+        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>' +
+        '<h3>Neuron type:</h3>' + '<span>' + d.neuronTypeName + '</span>'
       )
       .style('visibility', 'visible') 
       .style('top', event.pageY + 'px') 
@@ -82,8 +83,9 @@ d3.json(dataFile).then(function (data) {
     .append('circle')
     .attr('r', nodeRadius)
     .style('stroke', 'black')
-    .style('stroke-width', .5)
-    .attr('fill', function (d) { return nodeColor(d.className); })
+    .style('stroke-width', 2.5)
+    // .attr('fill', function (d) { return nodeColor(d.className); })
+    .attr('fill', function (d) { return nodeColor; })
     .on('mouseover', tooltipIn)
     .on('mouseout', tooltipOut)
     .call(nodeDragging(simulation));
