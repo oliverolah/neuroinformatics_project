@@ -1,0 +1,81 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Visualisations</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  <link rel="stylesheet" href="{% static 'css/visualisations_page.css' %}">
+  {% tailwind_css %}
+</head>
+<body>
+  
+  <!-- Main container -->
+  <div class="mb-14 lg:flex lg:gap-5">
+
+    <!-- Control Panel -->
+    <div class="bg-zinc-100 rounded-md shadow-xl w-5/6 h-2/4 mx-auto lg:rounded-l-none lg:w-1/3 xl:w-1/5">
+      <div class="py-6 px-5">
+        <div class="mb-6">
+          <h2 class="text-3xl font-medium lg:text-4xl">View (all)</h2>
+        </div>
+        <div class="flex justify-between mb-8">
+          <label for="neuron-checkbox" class="text-lg">Neurons</label>
+          <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+        </div>
+        <div class="mb-6">
+          <h2 class="text-3xl font-medium lg:text-4xl lg:mb-4">Sort by</h2>
+        </div>
+        <div class="border border-zinc-400 rounded-t-md">
+          <div class="flex justify-between bg-zinc-200 py-2 px-2 rounded-t-md">
+            <h3 class="text-lg font-medium">Neuron name</h3>
+          </div>
+          <div id="neurons-checkbox-list" class="px-2 overflow-y-auto overscroll-none h-56 divide-y divide-zinc-300">
+            <div class="flex justify-between py-3">
+              <h3>Neuron 1</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+            <div class="flex justify-between py-3">
+              <h3>Neuron 2</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+            <div class="flex justify-between py-3">
+              <h3>Neuron 3</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+            <div class="flex justify-between py-3">
+              <h3>Neuron 4</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+            <div class="flex justify-between py-3">
+              <h3>Neuron 5</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+            <div class="flex justify-between py-3">
+              <h3>Neuron 6</h3>
+              <input type="checkbox" id="neuron-checkbox" name="neuron-checkbox" checked class="px-3 py-3 rounded-md">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Visualisation container w=610 h=700 -->
+      <div id="data-vis-wrapper" class="bg-zinc-100 rounded-md shadow-xl p-2 w-5/6 mt-5 mx-auto lg:mt-0 lg:rounded-r-none">
+        <svg id="data-vis-container" width="600" height="700" class="rounded-md border border-zinc-300"></svg>
+      </div>
+  </div>
+  
+  <!-- Page JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    const dataFile = "{% static 'visualisations_data/20220504/json/data.json' %}";
+  </script>
+  <script src="{% static 'js/libs/d3.min.js' %}"></script>
+  <script type ="module" src="{% static 'js/visualisations_data_page.js' %}"></script>
+
+</body>
+</html>

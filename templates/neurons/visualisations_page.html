@@ -1,0 +1,33 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualisation Page</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  {% tailwind_css %}
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  {% include "navbar.html" %}
+
+  <!-- Page content -->
+  <main class="block mx-auto w-11/12 xl:w-10/12">
+    <!-- Page title -->
+    <div class="my-14">
+      <h1 class="text-4xl font-medium lg:text-5xl xl:text-6xl">C. elegans Data Visualisations</h1>
+    </div>
+  </main>
+
+  <!-- Data Visualisations -->
+  {% include "neurons/data_visualisations_container.html" %}
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+
+</body>
+</html>

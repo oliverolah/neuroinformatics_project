@@ -1,0 +1,57 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Key Sources Page</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  {% tailwind_css %}
+</head>
+<body>
+
+  <!-- Navigation bar -->
+  {% include "navbar.html" %}
+
+  <div class="block mx-auto w-11/12 xl:w-10/12">
+
+    <!-- Content wrapper -->
+    <div class="lg:grid lg:grid-cols-2 lg:justify-between lg:gap-20">
+      
+      <!-- Top/left container -->
+      <div>
+        <div class="mt-14">
+          <h1 class="text-4xl font-medium pb-14 lg:text-5xl xl:text-6xl">Key papers</h1>
+        </div>
+
+        <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
+          <div class="flex flex-col gap-6 w-4/5 mx-auto my-auto py-10 lg:gap-9">
+            {% include "keysources/key_papers_table.html" %}
+          </div>
+        </div>
+      </div>
+      
+      <!-- Bottom/right container -->
+      <div>
+        <div class="mt-14">
+          <h1 class="text-4xl font-medium pb-14 lg:text-5xl xl:text-6xl">Key websites</h1>
+        </div>
+
+        <div class="bg-zinc-100 flex rounded-md shadow-xl mb-14 lg:w-full lg:my-10">
+          <div class="flex flex-col gap-6 w-4/5 mx-auto my-auto py-10 lg:gap-9">
+            {% include "keysources/key_websites_table.html" %}
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  {% include "footer.html" %}
+
+</body>
+</html>

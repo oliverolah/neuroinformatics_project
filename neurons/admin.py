@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import NeuronClass, Neuron, Edge, Connectome
+from .models import NeuronClass, Neuron, Edge, Connectome, NeuronType
 
 
 # Import 'neuron network' database tables/models
@@ -12,9 +12,16 @@ class NeuronClassAdmin(admin.ModelAdmin):
 
 @admin.register(Neuron)
 class NeuronAdmin(admin.ModelAdmin):
-   list_display = ('neuronId', 'neuronName', 'className')
+   list_display = ('neuronId', 'neuronName', 'neuronTypeName', 'className')
    ordering = ('neuronId',)
-   search_fields = ('neuronId', 'neuronName')
+   search_fields = ('neuronId', 'neuronName', 'neuronTypeName')
+   
+
+@admin.register(NeuronType)
+class NeuronTypeAdmin(admin.ModelAdmin):
+   list_display = ('neuronTypeId', 'neuronTypeName')
+   ordering = ('neuronTypeId',)
+   search_fields = ('neuronTypeId', 'neuronTypeName')
 
 
 @admin.register(Edge)
