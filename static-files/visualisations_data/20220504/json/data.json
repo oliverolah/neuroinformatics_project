@@ -3,587 +3,587 @@
     {
       "id": "ADAL",
       "className": "ADA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "ADAR",
       "className": "ADA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "ADEL",
       "className": "ADE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ADER",
       "className": "ADE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ADFL",
       "className": "ADF",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ADFR",
       "className": "ADF",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ADLL",
       "className": "ADL",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ADLR",
       "className": "ADL",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AFDL",
       "className": "AFD",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AFDR",
       "className": "AFD",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AIAL",
       "className": "AIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIAR",
       "className": "AIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIBL",
       "className": "AIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIBR",
       "className": "AIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIML",
       "className": "AIM",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIMR",
       "className": "AIM",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AINL",
       "className": "AIN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AINR",
       "className": "AIN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIYL",
       "className": "AIY",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIYR",
       "className": "AIY",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIZL",
       "className": "AIZ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AIZR",
       "className": "AIZ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "ALA",
       "className": "ALA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "ALML",
       "className": "ALM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ALMR",
       "className": "ALM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ALNL",
       "className": "ALN",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ALNR",
       "className": "ALN",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AQR",
       "className": "AQR",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AS01",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS02",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS03",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS04",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS05",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS06",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS07",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS08",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS09",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS10",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "AS11",
       "className": "AS",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "ASEL",
       "className": "ASE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASER",
       "className": "ASE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASGL",
       "className": "ASG",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASGR",
       "className": "ASG",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASHL",
       "className": "ASH",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASHR",
       "className": "ASH",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASIL",
       "className": "ASI",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASIR",
       "className": "ASI",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASJL",
       "className": "ASJ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASJR",
       "className": "ASJ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASKL",
       "className": "ASK",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "ASKR",
       "className": "ASK",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AUAL",
       "className": "AUA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AUAR",
       "className": "AUA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AVAL",
       "className": "AVA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVAR",
       "className": "AVA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVBL",
       "className": "AVB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVBR",
       "className": "AVB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVDL",
       "className": "AVD",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVDR",
       "className": "AVD",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVEL",
       "className": "AVE",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVER",
       "className": "AVE",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVFL",
       "className": "AVF",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVFR",
       "className": "AVF",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVG",
       "className": "AVG",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVHL",
       "className": "AVH",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVHR",
       "className": "AVH",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVJL",
       "className": "AVJ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVJR",
       "className": "AVJ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVKL",
       "className": "AVK",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVKR",
       "className": "AVK",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVL",
       "className": "AVL",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "AVM",
       "className": "AVM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWAL",
       "className": "AWA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWAR",
       "className": "AWA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWBL",
       "className": "AWB",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWBR",
       "className": "AWB",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWCL",
       "className": "AWC",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "AWCR",
       "className": "AWC",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "BAGL",
       "className": "BAG",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "BAGR",
       "className": "BAG",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "BDUL",
       "className": "BDU",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "BDUR",
       "className": "BDU",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "CANL",
       "className": "CAN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "CANR",
       "className": "CAN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "CEPDL",
       "className": "CEP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "CEPDR",
       "className": "CEP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "CEPVL",
       "className": "CEP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "CEPVR",
       "className": "CEP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "DA01",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA02",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA03",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA04",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA05",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA06",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA07",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA08",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DA09",
       "className": "DA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB01",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB02",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB03",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB04",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB05",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB06",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DB07",
       "className": "DB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD01",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD02",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD03",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD04",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD05",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DD06",
       "className": "DD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "DVA",
       "className": "DVA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "DVB",
       "className": "DVB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "DVC",
       "className": "DVC",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "FLPL",
       "className": "FLP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "FLPR",
       "className": "FLP",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "HSNL",
       "className": "HSN",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "HSNR",
       "className": "HSN",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "I1L",
@@ -628,72 +628,72 @@
     {
       "id": "IL1DL",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL1DR",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL1VL",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL1VR",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL1L",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL1R",
       "className": "IL1",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2DL",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2DR",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2VL",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2VR",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2L",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "IL2R",
       "className": "IL2",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "LUAL",
       "className": "LUA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "LUAR",
       "className": "LUA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "M1",
@@ -758,757 +758,757 @@
     {
       "id": "OLLL",
       "className": "OLL",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "OLLR",
       "className": "OLL",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "OLQDL",
       "className": "OLQ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "OLQDR",
       "className": "OLQ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "OLQVL",
       "className": "OLQ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "OLQVR",
       "className": "OLQ",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PDA",
       "className": "PDA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "PDB",
       "className": "PDB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "PDEL",
       "className": "PDE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PDER",
       "className": "PDE",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHAL",
       "className": "PHA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHAR",
       "className": "PHA",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHBL",
       "className": "PHB",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHBR",
       "className": "PHB",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHCL",
       "className": "PHC",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PHCR",
       "className": "PHC",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PLML",
       "className": "PLM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PLMR",
       "className": "PLM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PLNL",
       "className": "PLN",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PLNR",
       "className": "PLN",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PQR",
       "className": "PQR",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PVCL",
       "className": "PVC",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVCR",
       "className": "PVC",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVDL",
       "className": "PVD",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PVDR",
       "className": "PVD",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PVM",
       "className": "PVM",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "PVNL",
       "className": "PVN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVNR",
       "className": "PVN",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVPL",
       "className": "PVP",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVPR",
       "className": "PVP",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVQL",
       "className": "PVQ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVQR",
       "className": "PVQ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVR",
       "className": "PVR",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVT",
       "className": "PVT",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVWL",
       "className": "PVW",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "PVWR",
       "className": "PVW",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIAL",
       "className": "RIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIAR",
       "className": "RIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIBL",
       "className": "RIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIBR",
       "className": "RIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RICL",
       "className": "RIC",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RICR",
       "className": "RIC",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RID",
       "className": "RID",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIFL",
       "className": "RIF",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIFR",
       "className": "RIF",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIGL",
       "className": "RIG",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIGR",
       "className": "RIG",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIH",
       "className": "RIH",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIML",
       "className": "RIM",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RIMR",
       "className": "RIM",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RIPL",
       "className": "RIP",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIPR",
       "className": "RIP",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIR",
       "className": "RIR",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIS",
       "className": "RIS",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RIVL",
       "className": "RIV",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RIVR",
       "className": "RIV",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDDL",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDDR",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDL",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDR",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDVL",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMDVR",
       "className": "RMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMED",
       "className": "RME",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMEV",
       "className": "RME",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMEL",
       "className": "RME",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMER",
       "className": "RME",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMFL",
       "className": "RMF",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMFR",
       "className": "RMF",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMGL",
       "className": "RMG",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RMGR",
       "className": "RMG",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "RMHL",
       "className": "RMH",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "RMHR",
       "className": "RMH",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SAADL",
       "className": "SAA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SAADR",
       "className": "SAA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SAAVL",
       "className": "SAA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SAAVR",
       "className": "SAA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SABD",
       "className": "SAB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SABVL",
       "className": "SAB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SABVR",
       "className": "SAB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SDQL",
       "className": "SDQ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SDQR",
       "className": "SDQ",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIADL",
       "className": "SIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIADR",
       "className": "SIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIAVL",
       "className": "SIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIAVR",
       "className": "SIA",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIBDL",
       "className": "SIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIBDR",
       "className": "SIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIBVL",
       "className": "SIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SIBVR",
       "className": "SIB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "SMBDL",
       "className": "SMB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMBDR",
       "className": "SMB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMBVL",
       "className": "SMB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMBVR",
       "className": "SMB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMDDL",
       "className": "SMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMDDR",
       "className": "SMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMDVL",
       "className": "SMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "SMDVR",
       "className": "SMD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "URADL",
       "className": "URA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "URADR",
       "className": "URA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "URAVL",
       "className": "URA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "URAVR",
       "className": "URA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "URBL",
       "className": "URB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "URBR",
       "className": "URB",
-      "neuronTypeName": "INTERNEURONS"
+      "neuronTypeName": "INTERNEURON"
     },
     {
       "id": "URXL",
       "className": "URX",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "URXR",
       "className": "URX",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "URYDL",
       "className": "URY",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "URYDR",
       "className": "URY",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "URYVL",
       "className": "URY",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "URYVR",
       "className": "URY",
-      "neuronTypeName": "SENSORY_NEURONS"
+      "neuronTypeName": "SENSORY_NEURON"
     },
     {
       "id": "VA01",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA02",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA03",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA04",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA05",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA06",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA07",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA08",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA09",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA10",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA11",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VA12",
       "className": "VA",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB01",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB02",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB03",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB04",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB05",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB06",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB07",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB08",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB09",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB10",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VB11",
       "className": "VB",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC01",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC02",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC03",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC04",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC05",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VC06",
       "className": "VC",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD01",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD02",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD03",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD04",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD05",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD06",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD07",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD08",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD09",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD10",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD11",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD12",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     },
     {
       "id": "VD13",
       "className": "VD",
-      "neuronTypeName": "MOTOR_NEURONS"
+      "neuronTypeName": "MOTOR_NEURON"
     }
   ],
   "links": [

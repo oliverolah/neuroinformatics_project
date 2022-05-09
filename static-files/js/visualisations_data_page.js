@@ -5,21 +5,24 @@ import {
   forceCenter,
 } from 'https://cdn.skypack.dev/d3-force@3';
 
-let svg = d3.select('#data-vis-container');
-
-const width = +svg.attr('width'),
+const svg = d3.select('#data-vis-container'),
+  width = +svg.attr('width'),
   height = +svg.attr('height');
 
-svg.attr("viewBox", "0 0 " + width + " " + height )
-  .attr("preserveAspectRatio", "xMinYMin");
+svg.attr('viewBox', '0 0 ' + width + ' ' + height)
+  .attr('preserveAspectRatio', 'xMinYMin');
 
 const centerX = width / 2,
   centerY = height / 2;
 
-const nodeRadius = 5;
+const nodeRadius = 6;
 
 // const nodeColor = d3.scaleOrdinal(d3.schemeSet3);
-const nodeColor = 'rgb(201,234,255)',
+// const nodeColor = 'rgb(201,234,255)',
+const nodeColorGroupPh = '#f9806f', // Pharynx
+  nodeColorGroupIn = '#8dd3c2', // Interneuron
+  nodeColorGroupSn = '#fbfbb5', // Sensory neuron
+  nodeColorGroupMn = '#c0bcde', // Motor neuron
   gapLinkColorOrange = 'rgba(255,127,1,255)', // color for GAP-type links
   synLinkColorBlue = 'rgba(23,118,182,255)'; // color for SYN-type links
 
@@ -30,8 +33,8 @@ d3.json(dataFile).then(function (data) {
     .force('charge', forceManyBody().strength(-40))
     .force('link', forceLink(data.links).id((d) => d.id))
     .force('center', forceCenter(centerX, centerY))
-    .force('forceX', d3.forceX(-1))  // keeps the unconnected nodes together with the rest on a screen
-    .force('forceY', d3.forceY(-1))  // keeps the unconnected nodes together with the rest on a screen
+    .force('forceX', d3.forceX(-1))
+    .force('forceY', d3.forceY(-1))
     .force('collide', d3.forceCollide(10));
   
   // node tooltip
@@ -41,11 +44,11 @@ d3.json(dataFile).then(function (data) {
     .style('visibility', 'hidden')
     .attr('class', 'tooltip');
 
-  const tooltipIn = function (event, d) {
+  const tooltipIn = (event, d) => {
     return nodeTooltip
       .html(
         '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' + 
-        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>' +
+        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>' + 
         '<h3>Neuron type:</h3>' + '<span>' + d.neuronTypeName + '</span>'
       )
       .style('visibility', 'visible') 
@@ -53,7 +56,7 @@ d3.json(dataFile).then(function (data) {
       .style('left', event.pageX + 'px')
   }
 
-  const tooltipOut = function() {
+  const tooltipOut = () => {
     return nodeTooltip
       .transition()
       .duration(50)
@@ -66,14 +69,14 @@ d3.json(dataFile).then(function (data) {
     .enter()
     .append('line')
     .attr('opacity', 0.3)
-    .style('stroke', function (d) {
+    .style('stroke', (d) => {
       if (d.edgeTypeName === 'syn') {
         return synLinkColorBlue; // syn link
       } else {
         return gapLinkColorOrange; // gap link
       }
     })
-    .attr('stroke-width', function (d) { return Math.sqrt(d.numOfEdges); });
+    .attr('stroke-width', (d) => { return Math.sqrt(d.numOfEdges); });
   
   const node = svg
     .attr('class', 'nodes')
@@ -83,23 +86,31 @@ d3.json(dataFile).then(function (data) {
     .append('circle')
     .attr('r', nodeRadius)
     .style('stroke', 'black')
-    .style('stroke-width', 2.5)
-    // .attr('fill', function (d) { return nodeColor(d.className); })
-    .attr('fill', function (d) { return nodeColor; })
+    .style('stroke-width', 2)
+    .attr('fill', (d) => {
+      if (d.neuronTypeName === 'PHARYNX') {
+        return nodeColorGroupPh;
+      } else if (d.neuronTypeName === 'INTERNEURON') {
+        return nodeColorGroupIn;
+      } else if (d.neuronTypeName === 'SENSORY_NEURON') {
+        return nodeColorGroupSn;
+      } else {
+        return nodeColorGroupMn;
+      }
+    })
     .on('mouseover', tooltipIn)
     .on('mouseout', tooltipOut)
-    .call(nodeDragging(simulation));
+    .call(nodeDragging(simulation))
+    .on('dblclick', connectedNodes);
   
   simulation.on('tick', ticked);
 
   function ticked() {
 
     node
-      // .attr('cx', (nd) => nd.x) // nd => node
-      // .attr('cy', (nd) => nd.y);
-      // this two lines of code below keep all nodes within the boundaries of the vis container even when dragged
-      .attr('cx', function(nd) { return nd.x = Math.max(nodeRadius, Math.min(width - nodeRadius, nd.x)); })
-      .attr('cy', function(nd) { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); }); 
+      // this two lines of code below keep all nodes within the boundaries of the vis container even when being dragged
+      .attr('cx', (nd) => { return nd.x = Math.max(nodeRadius, Math.min(width - nodeRadius, nd.x)); }) // nd => node
+      .attr('cy', (nd) => { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); }); 
   
     link
       .attr('x1', (lk) => lk.source.x) // lk => link
@@ -107,6 +118,43 @@ d3.json(dataFile).then(function (data) {
       .attr('x2', (lk) => lk.target.x)
       .attr('y2', (lk) => lk.target.y);
   };
+  
+
+  // Fading & highlighting of nodes & links
+  let toggle = 0; // Toggle stores whether the highlighting is on
+  let linkedByIndex = {}; // Create an array logging what is connected to what
+
+  for (let i = 0; i < data.nodes.length; i++) {
+    linkedByIndex[i + ',' + i] = 1;
+  };
+
+  data.links.forEach((d) => {
+    linkedByIndex[d.source.index + ',' + d.target.index] = 1;
+  });
+
+  // This function looks up whether a pair are neighbours
+  function neighborNodes(a, b) {
+    return linkedByIndex[a.index + ',' + b.index];
+  };
+
+  function connectedNodes() {
+    if (toggle === 0) {
+      let d = d3.select(this).node().__data__; // Reduce the opacity of all but the neighbouring nodes
+      node.style('opacity', (o) => {
+        return neighborNodes(d, o) || neighborNodes(o, d) ? 1 : 0.1;
+      });
+      link.style('opacity',(o) => {
+        return d.index === o.source.index || d.index === o.target.index ? 1 : 0.1;
+      });
+      toggle = 1; // Reduce the op
+    } else {
+      // Put them back to initial opacity
+      node.style('opacity', 1);
+      link.style('opacity', .3);
+      toggle = 0;
+    }
+  };
+
 
   // Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/zoom
   // visualisation zooming
