@@ -64,9 +64,15 @@
     </div>
 
       <!-- Visualisation container w=610 h=700 -->
-      <div id="data-vis-wrapper" class="bg-zinc-100 rounded-md shadow-xl p-2 w-5/6 mt-5 mx-auto lg:mt-0 lg:rounded-r-none">
-        <svg id="data-vis-container" width="600" height="700" class="rounded-md border border-zinc-300"></svg>
+      <div class="w-5/6 mx-auto mt-5 lg:mt-0">
+        <div id="data-vis-wrapper" class="bg-zinc-100 py-5 rounded-md shadow-xl lg:mt-0 lg:rounded-r-none">
+          <svg id="data-vis-container" width="600" height="700" class="rounded-md border border-zinc-300"></svg>
+        </div>
+
+        <!-- Data Visualisations Legend -->
+        {% include "neurons/data_visualisations_container_legend.html" %}
       </div>
+
   </div>
   
   <!-- Page JS -->
