@@ -17,12 +17,10 @@ const centerX = width / 2,
 
 const nodeRadius = 6;
 
-// const nodeColor = d3.scaleOrdinal(d3.schemeSet3);
-// const nodeColor = 'rgb(201,234,255)',
-const nodeColorGroupPh = '#f9806f', // Pharynx
-  nodeColorGroupIn = '#8dd3c2', // Interneuron
-  nodeColorGroupSn = '#fbfbb5', // Sensory neuron
-  nodeColorGroupMn = '#c0bcde', // Motor neuron
+const nodeColorGroupPh = '#f9806f', // Ph => Pharynx
+  nodeColorGroupIn = '#8dd3c2', // In => Interneuron
+  nodeColorGroupSn = '#fbfbb5', // Sn => Sensory neuron
+  nodeColorGroupMn = '#c0bcde', // Mn => Motor neuron
   gapLinkColorOrange = 'rgba(255,127,1,255)', // color for GAP-type links
   synLinkColorBlue = 'rgba(23,118,182,255)'; // color for SYN-type links
 
@@ -63,7 +61,7 @@ d3.json(dataFile).then(function (data) {
       .style('visibility', 'hidden')
   }
 
-  const link = svg
+  const edge = svg
     .selectAll('line')
     .data(data.links)
     .enter()
@@ -77,7 +75,7 @@ d3.json(dataFile).then(function (data) {
       }
     })
     .attr('stroke-width', (d) => { return Math.sqrt(d.numOfEdges); });
-  
+    
   const node = svg
     .attr('class', 'nodes')
     .selectAll('circles')
@@ -112,7 +110,7 @@ d3.json(dataFile).then(function (data) {
       .attr('cx', (nd) => { return nd.x = Math.max(nodeRadius, Math.min(width - nodeRadius, nd.x)); }) // nd => node
       .attr('cy', (nd) => { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); }); 
   
-    link
+    edge
       .attr('x1', (lk) => lk.source.x) // lk => link
       .attr('y1', (lk) => lk.source.y)
       .attr('x2', (lk) => lk.target.x)
@@ -143,14 +141,14 @@ d3.json(dataFile).then(function (data) {
       node.style('opacity', (o) => {
         return neighborNodes(d, o) || neighborNodes(o, d) ? 1 : 0.1;
       });
-      link.style('opacity',(o) => {
+      edge.style('opacity',(o) => {
         return d.index === o.source.index || d.index === o.target.index ? 1 : 0.1;
       });
       toggle = 1; // Reduce the op
     } else {
       // Put them back to initial opacity
       node.style('opacity', 1);
-      link.style('opacity', .3);
+      edge.style('opacity', .3);
       toggle = 0;
     }
   };

@@ -40,6 +40,7 @@ module.exports = {
         '../../templates/keysources/key_websites_table.html',
         '../../templates/neurons/visualisations_page.html',
         '../../templates/neurons/data_visualisations_container.html',
+        '../../templates/neurons/data_visualisations_container_legend.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
@@ -98,7 +99,13 @@ module.exports = {
             cardiffMetPrimaryLighter: '#003566',
             cardiffMetSecondary: '#0D47A1',
             successGreen: '#10A52E',
-            successGreenBrighter: '#04C42B'
+            successGreenBrighter: '#04C42B',
+            pharynxNodeColor: '#f9806f',
+            interneuronNodeColor: '#8dd3c2',
+            sensoryNeuronNodeColor: '#fbfbb5',
+            motorNeuronNodeColor: '#c0bcde',
+            gapLinkColor: 'rgba(255,127,1,255)',
+            synLinkColor: 'rgba(23,118,182,255)',
         }),
     },
     // variants: {
