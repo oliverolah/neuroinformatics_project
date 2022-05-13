@@ -41,6 +41,8 @@ module.exports = {
         '../../templates/neurons/visualisations_page.html',
         '../../templates/neurons/data_visualisations_container.html',
         '../../templates/neurons/data_visualisations_container_legend.html',
+        '../../templates/neurons/data_visualisations_container_graph_info_box.html',
+        '../../templates/neurons/data_visualisations_container_contact_box.html',
         
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).

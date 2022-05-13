@@ -64,12 +64,18 @@
     </div> -->
 
       <!-- Visualisation container -->
-      <div class="w-fit mx-auto">
-        <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl rounded-r-none flex gap-5">
-          <svg id="data-vis-container" width="900" height="700" class="rounded-md border border-zinc-300"></svg>
-          <!-- Data Visualisations Legend -->
-        {% include "neurons/data_visualisations_container_legend.html" %}
+      <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl flex gap-5 w-fit mx-auto">
+        <div class="block space-y-3">
+        <!-- Data Visualisations Information Box -->
+        {% include "neurons/data_visualisations_container_graph_info_box.html" %}
+        {% include "neurons/data_visualisations_container_contact_box.html" %}
         </div>
+
+        <!-- Data Visualisations -->
+        <svg id="data-vis-container" width="900" height="700" class="rounded-md border border-zinc-300"></svg>
+
+        <!-- Data Visualisations Legend -->
+        {% include "neurons/data_visualisations_container_legend.html" %}
       </div>
 
   </div>
