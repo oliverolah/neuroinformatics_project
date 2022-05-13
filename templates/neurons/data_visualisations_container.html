@@ -14,10 +14,10 @@
 <body>
   
   <!-- Main container -->
-  <div class="mb-14 flex gap-5 justify-between overflow-x-auto">
+  <div class="mb-14 overflow-x-auto">
 
     <!-- Control Panel -->
-    <div class="bg-zinc-100 rounded-md shadow-xl h-2/4 ml-0 rounded-l-none">
+    <!-- <div class="bg-zinc-100 rounded-md shadow-xl h-2/4 ml-0 rounded-l-none">
       <div class="py-6 px-5 w-80">
         <div class="mb-6">
           <h2 class="font-medium text-4xl">View (all)</h2>
@@ -61,16 +61,15 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
       <!-- Visualisation container -->
-      <div class="mr-0 mt-0">
-        <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl mt-0 rounded-r-none">
-          <svg id="data-vis-container" width="1500" height="700" class="rounded-md border border-zinc-300"></svg>
-        </div>
-
-        <!-- Data Visualisations Legend -->
+      <div class="w-fit mx-auto">
+        <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl rounded-r-none flex gap-5">
+          <svg id="data-vis-container" width="900" height="700" class="rounded-md border border-zinc-300"></svg>
+          <!-- Data Visualisations Legend -->
         {% include "neurons/data_visualisations_container_legend.html" %}
+        </div>
       </div>
 
   </div>

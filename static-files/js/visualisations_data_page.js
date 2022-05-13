@@ -98,24 +98,36 @@ d3.json(dataFile).then(function (data) {
     })
     .on('mouseover', tooltipIn)
     .on('mouseout', tooltipOut)
-    .call(nodeDragging(simulation))
     .on('dblclick', connectedNodes);
   
-  simulation.on('tick', ticked);
-
-  function ticked() {
+  
+  const loadText = svg.append('text')
+    .attr('dy', '0.35em')
+    .attr('text-anchor', 'middle')
+    .attr('font-family', 'sans-serif')
+    .attr('font-size', 10)
+    .text('Simulating. One moment please…');
+  
+  // All credit goes to: https://bl.ocks.org/mbostock/1667139
+  d3.timeout(function (e) {
+    loadText.remove();
+  
+    // For more clarification & explanation of the code below (for loop) see this link: https://github.com/d3/d3-force/blob/master/README.md#simulation_tick
+    for (let i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay())); i < n; ++i) {
+      simulation.tick();
+    }
 
     node
       // this two lines of code below keep all nodes within the boundaries of the vis container even when being dragged
       .attr('cx', (nd) => { return nd.x = Math.max(nodeRadius, Math.min(width - nodeRadius, nd.x)); }) // nd => node
-      .attr('cy', (nd) => { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); }); 
-  
+      .attr('cy', (nd) => { return nd.y = Math.max(nodeRadius, Math.min(height - nodeRadius, nd.y)); });
+    
     edge
       .attr('x1', (lk) => lk.source.x) // lk => link
       .attr('y1', (lk) => lk.source.y)
       .attr('x2', (lk) => lk.target.x)
       .attr('y2', (lk) => lk.target.y);
-  };
+  });
   
 
   // Fading & highlighting of nodes & links
@@ -153,45 +165,6 @@ d3.json(dataFile).then(function (data) {
     }
   };
 
-
-  // Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/zoom
-  // visualisation zooming
-  // svg.call(d3.zoom()
-  //     .extent([[0, 0], [width, height]])
-  //     .scaleExtent([0, 8])
-  //     .on('zoom', zoomed));
-
-  // function zoomed({transform}) {
-  //   node.attr('transform', transform);
-  //   link.attr('transform', transform);
-  // };
-
   return svg.canvas;
 
 }).catch((err) => alert(err.message));
-
-// Code from observable, all credits to d3js-team. Source: https://observablehq.com/@d3/force-directed-graph
-// node dragging 
-function nodeDragging(simulation) {    
-  function dragStarted(event) {
-    if (!event.active) simulation.alphaTarget(0.3).restart();
-    event.subject.fx = event.subject.x;
-    event.subject.fy = event.subject.y;
-  }
-  
-  function dragged(event) {
-    event.subject.fx = event.x;
-    event.subject.fy = event.y;
-  }
-  
-  function dragEnded(event) {
-    if (!event.active) simulation.alphaTarget(0);
-    event.subject.fx = null;
-    event.subject.fy = null;
-  }
-  
-  return d3.drag()
-    .on('start', dragStarted)
-    .on('drag', dragged)
-    .on('end', dragEnded);
-};
