@@ -45,21 +45,21 @@ d3.json(dataFile).then(function (data) {
   const tooltipIn = (event, d) => {
     return nodeTooltip
       .html(
-        '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' + 
-        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>' + 
+        '<h3>Neuron name:</h3>' + '<span>' + d.id + '</span>' +
+        '<h3>Neuron class:</h3>' + '<span>' + d.className + '</span>' +
         '<h3>Neuron type:</h3>' + '<span>' + d.neuronTypeName + '</span>'
       )
-      .style('visibility', 'visible') 
-      .style('top', event.pageY + 'px') 
-      .style('left', event.pageX + 'px')
-  }
+      .style('visibility', 'visible')
+      .style('top', event.pageY + 'px')
+      .style('left', event.pageX + 'px');
+  };
 
   const tooltipOut = () => {
     return nodeTooltip
       .transition()
       .duration(50)
-      .style('visibility', 'hidden')
-  }
+      .style('visibility', 'hidden');
+  };
 
   const edge = svg
     .selectAll('line')
@@ -109,7 +109,7 @@ d3.json(dataFile).then(function (data) {
     .text('Simulating. One moment please…');
   
   // All credit goes to: https://bl.ocks.org/mbostock/1667139
-  d3.timeout(function (e) {
+  d3.timeout(function () {
     loadText.remove();
   
     // For more clarification & explanation of the code below (for loop) see this link: https://github.com/d3/d3-force/blob/master/README.md#simulation_tick
@@ -128,7 +128,7 @@ d3.json(dataFile).then(function (data) {
       .attr('x2', (lk) => lk.target.x)
       .attr('y2', (lk) => lk.target.y);
   });
-  
+
 
   // Fading & highlighting of nodes & links
   let toggle = 0; // Toggle stores whether the highlighting is on
