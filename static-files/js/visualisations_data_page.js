@@ -159,7 +159,7 @@ d3.json(dataFile).then(function (data) {
       toggle = 1; // Reduce the op
     } else {
       // Put them back to initial opacity
-      node.style('opacity', 1);
+      node.style('opacity', 1); 
       edge.style('opacity', .3);
       toggle = 0;
     }
