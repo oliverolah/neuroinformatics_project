@@ -173,7 +173,7 @@ STATICFILES_DIRS = [
 
 STATIC_ROOT = BASE_DIR / 'static'
 
-# Taliwind CONFIG
+# Tailwind CONFIG
 TAILWIND_APP_NAME = 'theme'
 
 INTERNAL_IPS = [
