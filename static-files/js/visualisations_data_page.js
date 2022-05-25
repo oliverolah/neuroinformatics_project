@@ -13,9 +13,8 @@ svg.attr('viewBox', '0 0 ' + width + ' ' + height)
   .attr('preserveAspectRatio', 'xMinYMin');
 
 const centerX = width / 2,
-  centerY = height / 2;
-
-const nodeRadius = 6;
+  centerY = height / 2,
+  nodeRadius = 6;
 
 const nodeColorGroupPh = '#f9806f', // Ph => Pharynx
   nodeColorGroupIn = '#8dd3c2', // In => Interneuron
@@ -113,7 +112,7 @@ d3.json(dataFile).then(function (data) {
     loadText.remove();
   
     // For more clarification & explanation of the code below (for loop) see this link: https://github.com/d3/d3-force/blob/master/README.md#simulation_tick
-    for (let i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay())); i < n; ++i) {
+    for (let i = 0, n = Math.ceil(Math.log(simulation.alphaMin()) / Math.log(1 - simulation.alphaDecay())); i < n; i++) {
       simulation.tick();
     }
 
