@@ -13,9 +13,8 @@ svg.attr('viewBox', '0 0 ' + width + ' ' + height)
   .attr('preserveAspectRatio', 'xMinYMin');
 
 const centerX = width / 2,
-  centerY = height / 2;
-
-const nodeRadius = 6;
+  centerY = height / 2,
+  nodeRadius = 6;
 
 const nodeColorGroupPh = '#f9806f', // Ph => Pharynx
   nodeColorGroupIn = '#8dd3c2', // In => Interneuron
