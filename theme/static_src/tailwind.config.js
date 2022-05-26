@@ -41,12 +41,14 @@ module.exports = {
         '../../templates/neurons/visualisations_page.html',
         '../../templates/neurons/data_visualisations_container.html',
         '../../templates/neurons/data_visualisations_container_legend.html',
+        '../../templates/neurons/data_visualisations_container_graph_info_box.html',
+        '../../templates/neurons/data_visualisations_container_contact_box.html',
         '../../templates/errs/err400.html',
         '../../templates/errs/err403.html',
         '../../templates/errs/err404.html',
         '../../templates/errs/err500.html',
-
         
+      
         /* 
          * Templates in other django apps (BASE_DIR/<any_app_name>/templates).
          * Adjust the following line to match your project structure.

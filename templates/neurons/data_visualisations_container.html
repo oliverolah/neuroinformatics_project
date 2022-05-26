@@ -64,11 +64,25 @@
     </div> -->
 
       <!-- Visualisation container -->
-      <div class="w-fit mx-auto">
-        <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl rounded-r-none flex gap-5">
+      <div id="data-vis-wrapper" class="bg-zinc-100 p-5 rounded-md shadow-xl w-fit mx-auto">
+
+        <!-- Container Header -->
+        <div class="bg-zinc-200 rounded-md shadow-xl mb-5">
+          <h2 class="px-4 py-8 text-3xl font-medium text-center">Synaptic network of C. Elegans</h2>
+        </div>
+
+        <div class="flex gap-5">
+          <div class="flex flex-col gap-5">
+            <!-- Data Visualisations Information Box -->
+            {% include "neurons/data_visualisations_container_graph_info_box.html" %}
+            {% include "neurons/data_visualisations_container_contact_box.html" %}
+          </div>
+
+          <!-- Data Visualisations -->
           <svg id="data-vis-container" width="900" height="700" class="rounded-md border border-zinc-300"></svg>
+
           <!-- Data Visualisations Legend -->
-        {% include "neurons/data_visualisations_container_legend.html" %}
+          {% include "neurons/data_visualisations_container_legend.html" %}
         </div>
       </div>
 
