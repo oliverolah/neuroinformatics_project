@@ -8,6 +8,13 @@ from keysources.views import returnKeySourcesPage
 from neurons.views import returnVisualisationPage
 from django.conf import settings
 from django.conf.urls.static import static
+# from neuroinformaticsProject.views import err404Handler # For trying out template designs 
+
+# handler400 = 'neuroinformaticsProject.views.err400Handler'
+# handler403 = 'neuroinformaticsProject.views.err403Handler'
+# handler404 = 'neuroinformaticsProject.views.err404Handler'
+# handler500 = 'neuroinformaticsProject.views.err500Handler'
+
 
 urlpatterns = [
     path(r'', returnHomePage, name='home'), # Root of application
@@ -17,6 +24,7 @@ urlpatterns = [
     path(r'contact_us_page/', returnContactUsPage, name='contactuspage'),
     path(r'about_page/', returnAboutPage, name='aboutpage'),
     path(r'key_sources/', returnKeySourcesPage, name='keyappsources'),
+    # path(r'err404/', err404Handler, name='err404'), # For trying out template designs 
 ] 
 
 if settings.DEBUG:
