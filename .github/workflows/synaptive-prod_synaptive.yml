@@ -22,10 +22,12 @@ jobs:
         with:
           python-version: '3.8'
 
+      # env changed from venv ==> python -m venv venv
+      # from !venv/ == to ==> !env/
       - name: Create and start virtual environment
         run: |
-          python -m venv venv
-          source venv/bin/activate
+          python -m venv env
+          source env/bin/activate
       
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -38,7 +40,7 @@ jobs:
           name: python-app
           path: |
             . 
-            !venv/
+            !env/
 
   deploy:
     runs-on: ubuntu-latest
