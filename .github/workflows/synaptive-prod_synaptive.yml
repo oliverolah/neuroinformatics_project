@@ -22,6 +22,7 @@ jobs:
         with:
           python-version: '3.8'
 
+      # adding collect static action
       - name: Create and start virtual environment
         run: |
           python -m venv venv
@@ -29,7 +30,7 @@ jobs:
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
+
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Upload artifact for deployment jobs
