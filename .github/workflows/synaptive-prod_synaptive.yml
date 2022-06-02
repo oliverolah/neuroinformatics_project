@@ -22,16 +22,18 @@ jobs:
         with:
           python-version: '3.8'
 
-      # env changed from venv ==> python -m venv venv
-      # from !venv/ == to ==> !env/
+      # adding collect static action
       - name: Create and start virtual environment
         run: |
-          python -m venv env
-          source env/bin/activate
+          python -m venv venv
+          source venv/bin/activate
       
       - name: Install dependencies
         run: pip install -r requirements.txt
-        
+      
+      - name: Collect static
+        run: python manage.py collectstatic
+
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
       
       - name: Upload artifact for deployment jobs
@@ -40,7 +42,7 @@ jobs:
           name: python-app
           path: |
             . 
-            !env/
+            !venv/
 
   deploy:
     runs-on: ubuntu-latest
