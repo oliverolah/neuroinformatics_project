@@ -10,10 +10,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 # from neuroinformaticsProject.views import err404Handler # For trying out template designs 
 
-# handler400 = 'neuroinformaticsProject.views.err400Handler'
-# handler403 = 'neuroinformaticsProject.views.err403Handler'
-# handler404 = 'neuroinformaticsProject.views.err404Handler'
-# handler500 = 'neuroinformaticsProject.views.err500Handler'
+handler400 = 'neuroinformaticsProject.views.err400Handler'
+handler403 = 'neuroinformaticsProject.views.err403Handler'
+handler404 = 'neuroinformaticsProject.views.err404Handler'
+handler500 = 'neuroinformaticsProject.views.err500Handler'
 
 
 urlpatterns = [
