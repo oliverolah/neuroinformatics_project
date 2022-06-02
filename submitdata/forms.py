@@ -3,7 +3,7 @@ from django.forms import ModelForm
 from .models import SubmitData
 from django.core.exceptions import ValidationError
 import os
-import magic
+# import magic
 # from django.core.validators import RegexValidator
 # import re
 
