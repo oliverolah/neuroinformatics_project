@@ -1,5 +1,4 @@
 from pathlib import Path
-from decouple import config
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -16,8 +15,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG =  str(os.environ.get('DEBUG')) == '1' # ('DEBUG', cast=bool)
 
 # ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-ALLOWED_HOSTS = ['synaptive.azurewebsites.net']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+# ALLOWED_HOSTS = ['synaptive.azurewebsites.net']
 
 
 # Application definition
@@ -84,43 +83,43 @@ WSGI_APPLICATION = 'neuroinformaticsProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME_1'),
-        'USER': config('DB_USER_1'),
-        'PASSWORD': config('DB_PASSWORD_1'),
-        'HOST': config('DB_HOST_1'),
-        'PORT': config('DB_PORT_1')
+        'NAME': os.environ.get('DB_NAME_1'),
+        'USER': os.environ.get('DB_USER_1'),
+        'PASSWORD': os.environ.get('DB_PASSWORD_1'),
+        'HOST': os.environ.get('DB_HOST_1'),
+        'PORT': os.environ.get('DB_PORT_1')
     },
     'neurons_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME_2'),
-        'USER': config('DB_USER_2'),
-        'PASSWORD': config('DB_PASSWORD_2'),
-        'HOST': config('DB_HOST_2'),
-        'PORT': config('DB_PORT_2')
+        'NAME': os.environ.get('DB_NAME_2'),
+        'USER': os.environ.get('DB_USER_2'),
+        'PASSWORD': os.environ.get('DB_PASSWORD_2'),
+        'HOST': os.environ.get('DB_HOST_2'),
+        'PORT': os.environ.get('DB_PORT_2')
     },
     'submitdata_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME_3'),
-        'USER': config('DB_USER_3'),
-        'PASSWORD': config('DB_PASSWORD_3'),
-        'HOST': config('DB_HOST_3'),
-        'PORT': config('DB_PORT_3')
+        'NAME': os.environ.get('DB_NAME_3'),
+        'USER': os.environ.get('DB_USER_3'),
+        'PASSWORD': os.environ.get('DB_PASSWORD_3'),
+        'HOST': os.environ.get('DB_HOST_3'),
+        'PORT': os.environ.get('DB_PORT_3')
     },
     'contact_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME_4'),
-        'USER': config('DB_USER_4'),
-        'PASSWORD': config('DB_PASSWORD_4'),
-        'HOST': config('DB_HOST_4'),
-        'PORT': config('DB_PORT_4')
+        'NAME': os.environ.get('DB_NAME_4'),
+        'USER': os.environ.get('DB_USER_4'),
+        'PASSWORD': os.environ.get('DB_PASSWORD_4'),
+        'HOST': os.environ.get('DB_HOST_4'),
+        'PORT': os.environ.get('DB_PORT_4')
     },
     'keysources_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('DB_NAME_5'),
-        'USER': config('DB_USER_5'),
-        'PASSWORD': config('DB_PASSWORD_5'),
-        'HOST': config('DB_HOST_5'),
-        'PORT': config('DB_PORT_5')
+        'NAME': os.environ.get('DB_NAME_5'),
+        'USER': os.environ.get('DB_USER_5'),
+        'PASSWORD': os.environ.get('DB_PASSWORD_5'),
+        'HOST': os.environ.get('DB_HOST_5'),
+        'PORT': os.environ.get('DB_PORT_5')
     },
 }
 
