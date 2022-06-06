@@ -1,0 +1,82 @@
+{% load tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualisation Page</title>
+  <link rel ="icon" href="{% static 'icons/neuron-project-logo-blue.png' %}" type ="image/x-icon">
+  {% tailwind_css %}
+</head>
+<body>
+
+  <div class="bg-zinc-200 rounded-md shadow-xl mx-auto w-48 h-fit">
+    <div class="grid space-y-4 px-4 py-8">
+      <!-- Nodes -->
+      <div>
+        <div class="mb-3">
+          <h3 class="font-medium text-lg">Nodes (Neurons)</h3>
+          <span class="italic text-sm">* split by their type</span>
+        </div>
+
+        <div class="grid space-y-1">
+          <!-- Pharynx -->
+          <div class="flex gap-2">
+            <!-- Circle -->
+            <div class="h-5 w-5 bg-pharynxNodeColor border-2 border-black rounded-full my-auto"></div>
+            <p class="">Pharynx neurons</p>
+          </div>
+
+          <!-- Interneuron -->
+          <div class="flex gap-2">
+            <!-- Circle -->
+            <div class="h-5 w-5 bg-interneuronNodeColor border-2 border-black rounded-full my-auto"></div>
+            <p>Interneurons</p>
+          </div>
+
+          <!-- Sensory Neuron -->
+          <div class="flex gap-2">
+            <!-- Circle -->
+            <div class="h-5 w-5 bg-sensoryNeuronNodeColor border-2 border-black rounded-full my-auto"></div>
+            <p>Sensory neurons</p>
+          </div>
+
+          <!-- Motor Neuron -->
+          <div class="flex gap-2">
+            <!-- Circle -->
+            <div class="h-5 w-5 bg-motorNeuronNodeColor border-2 border-black rounded-full my-auto"></div>
+            <p>Motor neurons</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Edges -->
+      <div>
+        <div class="mb-3">
+          <h3 class="font-medium text-lg">Links (Edges)</h3>
+          <span class="italic text-sm">* split by their type</span>
+        </div>
+
+        <div class="grid space-y-1">
+          <!-- GAP Link -->
+          <div class="flex gap-3">
+            <!-- Line -->
+            <div class="h-5 w-1 -rotate-45 bg-gapLinkColor border-black rounded-full my-auto"></div>
+            <p>GAP link</p>
+          </div>
+
+          <!-- SYN Link -->
+          <div class="flex gap-3">
+            <!-- Line -->
+            <div class="h-5 w-1 -rotate-45 bg-synLinkColor border-black rounded-full my-auto"></div>
+            <p>SYN link</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
