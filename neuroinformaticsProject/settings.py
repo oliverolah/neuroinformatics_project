@@ -1,21 +1,23 @@
 from pathlib import Path
 import os
 import dotenv
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Find .env file to load hidden variables
-dotenv_file = os.path.join(BASE_DIR, '.env')
+# dotenv_file = os.path.join(BASE_DIR, '.env')
+load_dotenv()
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get('DEBUG')) == '1' # ('DEBUG', cast=bool)
+DEBUG = str(os.getenv('DEBUG')) == '1' # ('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = []
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1']
@@ -82,46 +84,48 @@ WSGI_APPLICATION = 'neuroinformaticsProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+
+# from os.environ.get() --> os.getenv()
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME_1'),
-        'USER': os.environ.get('DB_USER_1'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_1'),
-        'HOST': os.environ.get('DB_HOST_1'),
-        'PORT': os.environ.get('DB_PORT_1')
+        'NAME': os.getenv('DB_NAME_1'),
+        'USER': os.getenv('DB_USER_1'),
+        'PASSWORD': os.getenv('DB_PASSWORD_1'),
+        'HOST': os.getenv('DB_HOST_1'),
+        'PORT': os.getenv('DB_PORT_1')
     },
     'neurons_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME_2'),
-        'USER': os.environ.get('DB_USER_2'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_2'),
-        'HOST': os.environ.get('DB_HOST_2'),
-        'PORT': os.environ.get('DB_PORT_2')
+        'NAME': os.getenv('DB_NAME_2'),
+        'USER': os.getenv('DB_USER_2'),
+        'PASSWORD': os.getenv('DB_PASSWORD_2'),
+        'HOST': os.getenv('DB_HOST_2'),
+        'PORT': os.getenv('DB_PORT_2')
     },
     'submitdata_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME_3'),
-        'USER': os.environ.get('DB_USER_3'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_3'),
-        'HOST': os.environ.get('DB_HOST_3'),
-        'PORT': os.environ.get('DB_PORT_3')
+        'NAME': os.getenv('DB_NAME_3'),
+        'USER': os.getenv('DB_USER_3'),
+        'PASSWORD': os.getenv('DB_PASSWORD_3'),
+        'HOST': os.getenv('DB_HOST_3'),
+        'PORT': os.getenv('DB_PORT_3')
     },
     'contact_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME_4'),
-        'USER': os.environ.get('DB_USER_4'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_4'),
-        'HOST': os.environ.get('DB_HOST_4'),
-        'PORT': os.environ.get('DB_PORT_4')
+        'NAME': os.getenv('DB_NAME_4'),
+        'USER': os.getenv('DB_USER_4'),
+        'PASSWORD': os.getenv('DB_PASSWORD_4'),
+        'HOST': os.getenv('DB_HOST_4'),
+        'PORT': os.getenv('DB_PORT_4')
     },
     'keysources_db': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME_5'),
-        'USER': os.environ.get('DB_USER_5'),
-        'PASSWORD': os.environ.get('DB_PASSWORD_5'),
-        'HOST': os.environ.get('DB_HOST_5'),
-        'PORT': os.environ.get('DB_PORT_5')
+        'NAME': os.getenv('DB_NAME_5'),
+        'USER': os.getenv('DB_USER_5'),
+        'PASSWORD': os.getenv('DB_PASSWORD_5'),
+        'HOST': os.getenv('DB_HOST_5'),
+        'PORT': os.getenv('DB_PORT_5')
     },
 }
 
